@@ -6,13 +6,10 @@ import { Button } from "@/components/ui/button"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
-import { Slider } from "@/components/ui/slider"
 
 const ProductFilter = () => {
   const [openCategory, setOpenCategory] = useState(true)
-  const [openPrice, setOpenPrice] = useState(true)
   const [openPackaging, setOpenPackaging] = useState(true)
-  const [priceRange, setPriceRange] = useState([0, 1000])
 
   const categories = [
     { id: "red-chilli", label: "Red Chilli" },
@@ -55,30 +52,6 @@ const ProductFilter = () => {
                 </Label>
               </div>
             ))}
-          </div>
-        </CollapsibleContent>
-      </Collapsible>
-
-      {/* Price Range */}
-      <Collapsible open={openPrice} onOpenChange={setOpenPrice}>
-        <div className="border-b pb-2 mb-2">
-          <CollapsibleTrigger className="flex items-center justify-between w-full">
-            <h3 className="text-lg font-medium">Price Range</h3>
-            <ChevronDown className={`h-5 w-5 transition-transform ${openPrice ? "transform rotate-180" : ""}`} />
-          </CollapsibleTrigger>
-        </div>
-        <CollapsibleContent className="pt-2 pb-4">
-          <div className="space-y-4">
-            <Slider
-              defaultValue={[0, 1000]}
-              max={1000}
-              step={10}
-              onValueChange={(value) => setPriceRange(value as number[])}
-            />
-            <div className="flex items-center justify-between">
-              <span>₹{priceRange[0]}</span>
-              <span>₹{priceRange[1]}</span>
-            </div>
           </div>
         </CollapsibleContent>
       </Collapsible>
