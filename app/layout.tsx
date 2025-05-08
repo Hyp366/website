@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -7,15 +7,24 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import WhatsAppButton from "@/components/whatsapp-button"
 import SupabaseProvider from "@/components/supabase-provider"
+import ViewportHandler from "@/components/viewport-handler"
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], display: 'swap' })
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  viewportFit: 'cover',
+}
 
 export const metadata: Metadata = {
   title: "Hearty You Products India Pvt Ltd | Organic Red Chilli, Millets & Spices",
   description:
     "Premium quality organic Red Chilli, Millets and Spices from Hearty You Products India. Natural, healthy, and sustainably sourced ingredients.",
   keywords: "Hearty You Products, organic red chilli, millets India, organic spices, natural food products",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -28,8 +37,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <SupabaseProvider>
+            <ViewportHandler />
             <Header />
-            <main className="min-h-screen">{children}</main>
+            <main className="min-h-screen flex-1 w-full">{children}</main>
             <WhatsAppButton />
             <Footer />
           </SupabaseProvider>
