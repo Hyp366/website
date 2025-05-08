@@ -1,0 +1,184 @@
+import Image from "next/image"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About Us | Hearty You Products India Pvt Ltd",
+  description:
+    "Learn about Hearty You Products India Pvt Ltd, our mission, values, and the team behind our premium Red Chilli, Millets, and Spices.",
+  keywords: "Hearty You Products about, organic food company India, red chilli producer, millets supplier",
+}
+
+export default function AboutPage() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      {/* Hero Section */}
+      <section className="relative h-[50vh] flex items-center">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/placeholder.svg?height=800&width=1920"
+            alt="About Hearty You Products"
+            fill
+            className="object-cover brightness-50"
+            priority
+          />
+        </div>
+        <div className="container relative z-10 mx-auto px-4 text-white">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+          <p className="text-xl max-w-2xl">
+            Discover the story behind Hearty You Products and our commitment to quality
+          </p>
+        </div>
+      </section>
+
+      {/* Company History */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="relative h-80 md:h-96 order-2 md:order-1">
+              <Image
+                src="/placeholder.svg?height=600&width=800"
+                alt="Hearty You Products History"
+                fill
+                className="object-cover rounded-lg"
+              />
+            </div>
+            <div className="order-1 md:order-2">
+              <h2 className="text-3xl font-bold mb-6 text-red-600">Our Story</h2>
+              <p className="text-gray-700 mb-6">
+                Hearty You Products India Pvt Ltd was founded with a vision to bring premium quality Red Chilli,
+                Millets, and Spices to consumers while supporting local farmers and sustainable agricultural practices.
+              </p>
+              <p className="text-gray-700 mb-6">
+                What started as a small initiative has now grown into a trusted brand known for its commitment to
+                quality, purity, and customer satisfaction. Our journey has been guided by our passion for healthy,
+                natural food products and our dedication to excellence.
+              </p>
+              <p className="text-gray-700">
+                Today, we continue to expand our product range while maintaining the same high standards that have
+                defined our brand from the beginning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission & Values */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12 text-center text-red-600">Our Mission & Values</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg
+                  className="w-8 h-8 text-red-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-center">Quality</h3>
+              <p className="text-gray-600 text-center">
+                We are committed to providing the highest quality products through rigorous selection and testing
+                processes.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg
+                  className="w-8 h-8 text-red-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-center">Sustainability</h3>
+              <p className="text-gray-600 text-center">
+                We support sustainable farming practices and work closely with farmers to ensure environmental
+                responsibility.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg
+                  className="w-8 h-8 text-red-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-semibold mb-4 text-center">Community</h3>
+              <p className="text-gray-600 text-center">
+                We believe in supporting local communities and creating positive impact through fair trade practices.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-16 bg-white p-8 rounded-lg shadow-sm">
+            <h3 className="text-2xl font-bold mb-6 text-red-600 text-center">Our Mission</h3>
+            <p className="text-gray-700 text-center max-w-3xl mx-auto">
+              To provide premium quality Red Chilli, Millets, and Spices that enhance the flavor and nutritional value
+              of every meal while supporting sustainable farming practices and empowering local communities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-2 text-center text-red-600">Our Team</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Meet the dedicated professionals behind Hearty You Products
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[1, 2, 3, 4].map((member) => (
+              <div key={member} className="bg-gray-50 p-6 rounded-lg text-center">
+                <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                  <Image
+                    src="/placeholder.svg?height=200&width=200"
+                    alt={`Team Member ${member}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-1 text-red-600">Team Member {member}</h3>
+                <p className="text-gray-600 mb-3">Position Title</p>
+                <p className="text-gray-600 text-sm">
+                  Brief description about the team member and their role in the company.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
