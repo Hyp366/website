@@ -48,7 +48,7 @@ export default function Home() {
             </div>
             <div className="relative h-80 md:h-96 order-1 md:order-2 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1470&auto=format&fit=crop"
                 alt="About Hearty You Products"
                 fill
                 className="object-cover"
@@ -92,7 +92,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?q=80&w=1470&auto=format&fit=crop"
                   alt="Processing Unit"
                   fill
                   className="object-cover"
@@ -107,7 +107,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?q=80&w=1472&auto=format&fit=crop"
                   alt="Quality Control"
                   fill
                   className="object-cover"
@@ -121,7 +121,12 @@ export default function Home() {
 
             <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
               <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
-                <Image src="/placeholder.svg?height=400&width=600" alt="Packaging Unit" fill className="object-cover" />
+                <Image 
+                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1470&auto=format&fit=crop" 
+                  alt="Packaging Unit" 
+                  fill 
+                  className="object-cover" 
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3 text-red-600">Packaging Unit</h3>
               <p className="text-gray-600">

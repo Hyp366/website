@@ -15,7 +15,7 @@ export default function AboutPage() {
       <section className="relative h-[50vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="https://images.unsplash.com/photo-1529255848808-5f6be1c2a556?q=80&w=1920&auto=format&fit=crop"
             alt="About Hearty You Products"
             fill
             className="object-cover brightness-50"
@@ -36,7 +36,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative h-80 md:h-96 order-2 md:order-1">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1920&auto=format&fit=crop"
                 alt="Hearty You Products History"
                 fill
                 className="object-cover rounded-lg"
@@ -150,32 +150,65 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Facilities Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-2 text-center text-red-600">Our Team</h2>
+          <h2 className="text-3xl font-bold mb-2 text-center text-red-600">Our Facilities</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Meet the dedicated professionals behind Hearty You Products
+            State-of-the-art processing and packaging facilities ensuring premium quality
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((member) => (
-              <div key={member} className="bg-gray-50 p-6 rounded-lg text-center">
-                <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=200&width=200"
-                    alt={`Team Member ${member}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-1 text-red-600">Team Member {member}</h3>
-                <p className="text-gray-600 mb-3">Position Title</p>
-                <p className="text-gray-600 text-sm">
-                  Brief description about the team member and their role in the company.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="relative h-64">
+                <Image
+                  src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?q=80&w=1470&auto=format&fit=crop"
+                  alt="Processing Facility"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-red-600">Processing Facility</h3>
+                <p className="text-gray-600">
+                  Our modern processing facility equipped with the latest technology ensures that our products meet the highest quality standards.
                 </p>
               </div>
-            ))}
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="relative h-64">
+                <Image
+                  src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1470&auto=format&fit=crop"
+                  alt="Quality Control Lab"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-red-600">Quality Control Lab</h3>
+                <p className="text-gray-600">
+                  Our dedicated quality control laboratory conducts rigorous testing to ensure that every product meets our strict quality parameters.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+              <div className="relative h-64">
+                <Image
+                  src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1469&auto=format&fit=crop"
+                  alt="Packaging Unit"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 text-red-600">Packaging Unit</h3>
+                <p className="text-gray-600">
+                  Our hygienic packaging facility ensures that our products maintain their freshness and quality throughout their shelf life.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
