@@ -24,7 +24,7 @@ const Footer = () => {
               <span className="font-bold text-xl">Hearty You</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Premium quality Red Chilli, Millets, and Spices for a healthier you. Sustainably sourced and naturally
+              Premium quality Red Chilli, Millets, Spices, and Herbal & Fruit Powders for a healthier you. Sustainably sourced and naturally
               processed.
             </p>
             <div className="flex space-x-4">
@@ -86,20 +86,34 @@ const Footer = () => {
               <li className="flex">
                 <MapPin className="h-5 w-5 text-red-500 mr-3 flex-shrink-0" />
                 <span className="text-gray-400">
-                  123 Business Park, Industrial Area
+                  Hearty You Products India Pvt Ltd,
                   <br />
-                  City Name, State - 123456
+                  #13068, Prestige Shantiniketan,
                   <br />
-                  India
+                  Whitefield Hoodie Main Road,
+                  <br />
+                  Bangalore 560048, India
                 </span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 text-red-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-400">+91 98765 43210</span>
+                <a 
+                  href="https://wa.me/919341213729" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  +91 93412 13729
+                </a>
               </li>
               <li className="flex">
                 <Mail className="h-5 w-5 text-red-500 mr-3 flex-shrink-0" />
-                <span className="text-gray-400">info@heartyyouproducts.com</span>
+                <a 
+                  href="mailto:n.manjusha18@gmail.com" 
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  n.manjusha18@gmail.com
+                </a>
               </li>
             </ul>
           </div>
