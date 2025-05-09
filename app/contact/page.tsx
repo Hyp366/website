@@ -144,14 +144,14 @@ export default function ContactPage() {
                   "Yes, we ship our products internationally. Shipping costs and delivery times vary depending on the destination. Please contact us for specific shipping information to your location.",
               },
               {
-                question: "Are your products certified organic?",
-                answer:
-                  "Many of our products are certified organic. Each product page specifies the certifications that apply to that particular item. We are committed to sustainable and natural farming practices.",
-              },
-              {
                 question: "How can I become a distributor for Hearty You Products?",
                 answer:
                   "We're always looking for distribution partners. Please fill out our contact form with details about your business, and our partnership team will get in touch with you to discuss potential collaboration.",
+              },
+              {
+                question: "What types of products do you offer?",
+                answer:
+                  "We offer a wide range of premium quality Red Chilli, Millets, Spices, Herbal & Fruit Powders, and Indian Pulses. All our products are carefully sourced and processed to maintain their natural properties and nutritional value.",
               },
             ].map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">

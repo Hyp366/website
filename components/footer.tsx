@@ -118,14 +118,34 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* USA Address */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Newsletter</h3>
-            <p className="text-gray-400 mb-4">Subscribe to our newsletter for updates on new products and offers.</p>
-            <div className="flex flex-col space-y-3">
-              <Input type="email" placeholder="Your email address" className="bg-gray-800 border-gray-700 text-white" />
-              <Button className="bg-red-600 hover:bg-red-700">Subscribe</Button>
-            </div>
+            <h3 className="text-lg font-semibold mb-6">USA Office</h3>
+            <ul className="space-y-4">
+              <li className="flex">
+                <MapPin className="h-5 w-5 text-red-500 mr-3 flex-shrink-0" />
+                <span className="text-gray-400">
+                  HAPPYYOUPRODUCTS LLC,
+                  <br />
+                  3400 COTTAGE WAY SUITE G2 # 13626,
+                  <br />
+                  SACRAMENTO CA 95825,
+                  <br />
+                  USA
+                </span>
+              </li>
+              <li className="flex">
+                <Phone className="h-5 w-5 text-red-500 mr-3 flex-shrink-0" />
+                <a 
+                  href="https://wa.me/16508886202" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  +1 (650) 888-6202
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

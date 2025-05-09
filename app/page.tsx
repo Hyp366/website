@@ -6,7 +6,6 @@ import { ArrowRight } from "lucide-react"
 import EcosystemSection from "@/components/ecosystem-section"
 import HeroSlider from "@/components/hero-slider"
 import FeaturedCategories from "@/components/featured-categories"
-import TestimonialsSection from "@/components/testimonials-section"
 import { Suspense } from "react"
 
 export default function Home() {
@@ -145,9 +144,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <TestimonialsSection />
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-red-600 to-red-700 text-white">
