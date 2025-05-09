@@ -1,15 +1,15 @@
 export const redChilliProducts = [
   {
     id: 1,
-    name: "334/S4/Sannam/S10 Red Chilli",
+    name: "334/S4/SANNAM/S10 Red Chilli",
     category: "red-chilli",
     slug: "334-s4-sannam-s10-red-chilli",
     image: "/images/chilli/334-s4-sannam-s10.jpg",
     description:
-      "Premium quality 334/S4/Sannam/S10 red chilli with rich color and balanced heat, sourced from Guntur, Andhra Pradesh.",
+      "Premium 334/S4/SANNAM/S10 Dry Red Chilli from Guntur, India. Known for its rich color, balanced heat, and distinctive elongated shape with stem.",
     featured: true,
     details: {
-      productName: "334/S4/Sannam/S10",
+      productName: "334/S4/SANNAM/S10",
       style: "Dried",
       flavour: "Medium",
       color: "Red",
@@ -38,11 +38,11 @@ export const redChilliProducts = [
   },
   {
     id: 2,
-    name: "Teja/S17 Red Chilli",
+    name: "Teja Chilli - S17",
     category: "red-chilli",
     slug: "teja-s17-red-chilli",
     image: "/images/chilli/teja-s17.jpg",
-    description: "Premium Teja/S17 red chilli known for its unique flavor profile and consistent heat level.",
+    description: "Premium Teja S17 dry red chilli from Guntur, India. Features a distinctive bright red color with medium length pods and consistent heat level.",
     featured: true,
     details: {
       productName: "Teja/S17",
@@ -62,7 +62,7 @@ export const redChilliProducts = [
       foreignMaterial: "1% maximum",
       moisture: "14% maximum",
       quality: "A/C Best",
-      origin: "Andhra Pradesh, India",
+      origin: "Guntur, Andhra Pradesh, India",
       packingDetails: "5,10,15,20,25 kg Cartoon/Jute/pp",
     },
     benefits: [
@@ -74,14 +74,14 @@ export const redChilliProducts = [
   },
   {
     id: 3,
-    name: "Byadgi Red Chilli",
+    name: "BYADGI Dry Red Chilli",
     category: "red-chilli",
     slug: "byadgi-red-chilli",
     image: "/images/chilli/byadgi.jpg",
-    description: "Premium Byadgi red chilli famous for its deep color and unique flavor profile.",
+    description: "Premium BYADGI Dry Red Chilli from Pramoda Exim Corporation. Renowned for its wrinkled appearance, deep red color and exceptional color extraction properties.",
     featured: true,
     details: {
-      productName: "Byadgi",
+      productName: "BYADGI",
       style: "Dried",
       flavour: "Medium",
       color: "Deep Red",
@@ -114,7 +114,7 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "wrinkled-273-red-chilli",
     image: "/images/chilli/wrinkled-273.jpg",
-    description: "Wrinkled 273 red chilli known for its distinctive appearance and rich flavor.",
+    description: "Wrinkled 273 red chilli variety featuring distinctive wrinkled surface and bright red color. Perfect for adding rich flavor and appealing color to various dishes.",
     featured: false,
     details: {
       productName: "Wrinkled 273",
@@ -146,11 +146,11 @@ export const redChilliProducts = [
   },
   {
     id: 5,
-    name: "ENDO 5 Red Chilli",
+    name: "Indian Red Chilli ENDO 5",
     category: "red-chilli",
     slug: "endo-5-red-chilli",
     image: "/images/chilli/endo-5.jpg",
-    description: "ENDO 5 red chilli variety known for its consistent quality and versatile culinary applications.",
+    description: "Premium Indian Red Chilli ENDO 5 variety featuring medium-length pods with stems. Known for its consistent quality and versatile applications in various cuisines.",
     featured: false,
     details: {
       productName: "ENDO 5",
@@ -186,7 +186,7 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "fresh-red-chilli",
     image: "/images/chilli/fresh-red-chilli.jpg",
-    description: "Premium quality fresh red chilli with vibrant color and juicy texture for immediate culinary use.",
+    description: "Premium quality fresh red chilli with vibrant color and juicy texture for immediate culinary use. Features bright red color and glossy skin.",
     featured: true,
     details: {
       productName: "Fresh Red Chilli",
