@@ -7,6 +7,7 @@ import EcosystemSection from "@/components/ecosystem-section"
 import HeroSlider from "@/components/hero-slider"
 import FeaturedCategories from "@/components/featured-categories"
 import TestimonialsSection from "@/components/testimonials-section"
+import { Suspense } from "react"
 
 export default function Home() {
   return (
@@ -67,7 +68,9 @@ export default function Home() {
             meals
           </p>
 
-          <ProductGrid featured={true} />
+          <Suspense fallback={<div className="text-center py-8">Loading featured products...</div>}>
+            <ProductGrid featured={true} />
+          </Suspense>
 
           <div className="text-center mt-12">
             <Button asChild className="bg-red-600 hover:bg-red-700">
