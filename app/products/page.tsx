@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import ProductGrid from "@/components/product-grid"
 import ProductFilter from "@/components/product-filter"
+import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "Products | Hearty You Products India Pvt Ltd",
@@ -36,12 +37,20 @@ export default function ProductsPage() {
           <div className="flex flex-col md:flex-row gap-8">
             {/* Filters */}
             <div className="w-full md:w-1/4">
-              <ProductFilter />
+              <Suspense fallback={<div className="p-4 border rounded-lg animate-pulse bg-gray-50">Loading filters...</div>}>
+                <ProductFilter />
+              </Suspense>
             </div>
 
             {/* Products Grid */}
             <div className="w-full md:w-3/4">
-              <ProductGrid />
+              <Suspense fallback={<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="bg-gray-100 rounded-xl h-64 animate-pulse"></div>
+                ))}
+              </div>}>
+                <ProductGrid />
+              </Suspense>
             </div>
           </div>
         </div>

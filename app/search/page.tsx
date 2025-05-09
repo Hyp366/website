@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useSearchParams, useRouter } from "next/navigation"
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import ProductGrid from "@/components/product-grid"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -18,7 +18,8 @@ import {
 import { Badge } from "@/components/ui/badge"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 
-export default function SearchPage() {
+// Content component that uses useSearchParams
+function SearchPageContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const initialQuery = searchParams.get("q") || ""
@@ -186,11 +187,17 @@ export default function SearchPage() {
                     <>No results found for: <span className="text-red-600">"{currentQuery}"</span></>
                   )}
                 </h2>
-                <ProductGrid 
-                  searchQuery={currentQuery} 
-                  sortOrder={sortOrder} 
-                  onResultsCount={setResultsCount}
-                />
+                <Suspense fallback={<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {[...Array(6)].map((_, i) => (
+                    <div key={i} className="bg-gray-100 rounded-xl h-64 animate-pulse"></div>
+                  ))}
+                </div>}>
+                  <ProductGrid 
+                    searchQuery={currentQuery} 
+                    sortOrder={sortOrder} 
+                    onResultsCount={setResultsCount}
+                  />
+                </Suspense>
               </>
             ) : (
               <div className="text-center py-12">
@@ -201,5 +208,36 @@ export default function SearchPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+// Main export with Suspense for the entire page
+export default function SearchPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex flex-col min-h-screen pt-24">
+        <div className="container mx-auto px-4 py-8">
+          <div className="animate-pulse">
+            <div className="h-8 w-48 bg-gray-200 rounded mb-8"></div>
+            <div className="flex flex-col md:flex-row gap-6">
+              <div className="w-full md:w-1/3 lg:w-1/4">
+                <div className="h-10 w-full bg-gray-200 rounded mb-6"></div>
+                <div className="h-40 w-full bg-gray-200 rounded"></div>
+              </div>
+              <div className="w-full md:w-2/3 lg:w-3/4">
+                <div className="h-6 w-64 bg-gray-200 rounded mb-6"></div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {[...Array(6)].map((_, i) => (
+                    <div key={i} className="bg-gray-200 rounded-xl h-64"></div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }>
+      <SearchPageContent />
+    </Suspense>
   )
 }
