@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
@@ -85,43 +84,50 @@ const HeroSlider = () => {
   return (
     <section className="relative h-[80vh] md:h-[90vh] overflow-hidden">
       {/* Slides */}
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <div className="absolute inset-0">
-            <Image
-              src={isMobile ? slide.mobileImage : slide.image}
-              alt={slide.title}
-              fill
-              className="object-cover brightness-50"
-              priority={index === 0}
-              sizes="(max-width: 768px) 100vw, 100vw"
-            />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent" />
-          <div className="container relative z-10 mx-auto px-4 h-full flex items-center">
-            <div className="max-w-full md:max-w-2xl text-white">
-              <h1 className="text-3xl md:text-6xl font-bold mb-3 md:mb-4 opacity-0 animate-[fadeInUp_1s_ease-out_forwards] leading-tight">
-                {slide.title}
-              </h1>
-              <p className="text-lg md:text-2xl mb-6 md:mb-8 opacity-0 animate-[fadeInUp_1s_ease-out_0.3s_forwards]">
-                {slide.description}
-              </p>
-              <Button
-                asChild
-                size={isMobile ? "default" : "lg"}
-                className="bg-red-600 hover:bg-red-700 opacity-0 animate-[fadeInUp_1s_ease-out_0.6s_forwards] w-full sm:w-auto"
-              >
-                <Link href={slide.buttonLink}>{slide.buttonText}</Link>
-              </Button>
+      {slides.map((slide, index) => {
+        // Create a unique gradient for each slide based on its ID
+        const gradientColors: Record<number, string> = {
+          1: "from-red-900 via-red-700 to-red-500", // Red chilli
+          2: "from-amber-800 via-amber-600 to-amber-400", // Millets
+          3: "from-yellow-700 via-orange-600 to-yellow-500", // Spices
+          4: "from-green-800 via-green-600 to-green-400", // Herbal & Fruit Powders
+          5: "from-orange-800 via-yellow-700 to-orange-500", // Indian Pulses
+        }
+        
+        return (
+          <div
+            key={slide.id}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <div className={`absolute inset-0 bg-gradient-to-br ${gradientColors[slide.id]}`}>
+              {/* Animated background pattern */}
+              <div className="absolute inset-0 opacity-10 animate-pulse">
+                <div className="h-full w-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+              </div>
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
+            <div className="container relative z-10 mx-auto px-4 h-full flex items-center">
+              <div className="max-w-full md:max-w-2xl text-white">
+                <h1 className="text-3xl md:text-6xl font-bold mb-3 md:mb-4 opacity-0 animate-[fadeInUp_1s_ease-out_forwards] leading-tight">
+                  {slide.title}
+                </h1>
+                <p className="text-lg md:text-2xl mb-6 md:mb-8 opacity-0 animate-[fadeInUp_1s_ease-out_0.3s_forwards]">
+                  {slide.description}
+                </p>
+                <Button
+                  asChild
+                  size={isMobile ? "default" : "lg"}
+                  className="bg-red-600 hover:bg-red-700 opacity-0 animate-[fadeInUp_1s_ease-out_0.6s_forwards] w-full sm:w-auto"
+                >
+                  <Link href={slide.buttonLink}>{slide.buttonText}</Link>
+                </Button>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        )
+      })}
 
       {/* Indicators */}
       <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
