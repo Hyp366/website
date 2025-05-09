@@ -190,27 +190,74 @@ export default function InfrastructurePage() {
         </div>
       </section>
 
-      {/* Gallery */}
+      {/* Exporting Countries */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-2 text-center text-red-600">Infrastructure Gallery</h2>
+          <h2 className="text-3xl font-bold mb-2 text-center text-red-600">Our Export Destinations</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Take a visual tour of our state-of-the-art facilities
+            We proudly supply our full range of premium products to customers around the world
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((img) => (
-              <div key={img} className="relative h-64 rounded-lg overflow-hidden cursor-pointer group">
-                <Image
-                  src="/placeholder.svg?height=500&width=500"
-                  alt={`Infrastructure Image ${img}`}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
-                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-medium">
-                    View Larger
-                  </span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {[
+              {
+                country: "United States",
+                image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "Canada",
+                image: "https://images.unsplash.com/photo-1569681157442-5f15f6bdd10d?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "United Kingdom",
+                image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "Australia",
+                image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "Germany",
+                image: "https://images.unsplash.com/photo-1554072675-66db59dba46f?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "France",
+                image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "UAE",
+                image: "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "Singapore",
+                image: "https://images.unsplash.com/photo-1565967511849-76a60a516170?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              }
+            ].map((country, index) => (
+              <div key={index} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                <div className="relative h-48">
+                  <Image
+                    src={country.image}
+                    alt={`${country.country}`}
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  <div className="absolute bottom-0 left-0 w-full p-4">
+                    <h3 className="text-xl font-bold text-white">{country.country}</h3>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-gray-600 text-sm">
+                    <span className="font-semibold">Products Exported:</span> {country.description}
+                  </p>
                 </div>
               </div>
             ))}
