@@ -40,7 +40,7 @@ const WhatsAppButton = () => {
 
   const handleWhatsAppClick = () => {
     // Replace with your actual WhatsApp number
-    const phoneNumber = "+919392954474" // Added country code for international compatibility
+    const phoneNumber = "919341213729" // Country code (91) followed by number without +
     const message = "Hello, I'm interested in Hearty You Products. Can you provide more information?"
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`

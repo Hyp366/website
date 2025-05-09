@@ -1,13 +1,15 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo, useCallback } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { redChilliProducts } from "@/data/red-chilli-products"
 import { milletsProducts } from "@/data/millets-products"
 import { spicesProducts } from "@/data/spices-products"
-import { useRouter } from "next/navigation"
+import { herbalFruitPowders } from "@/data/herbal-fruit-powders"
+import { indianPulses } from "@/data/indian-pulses"
+import { useRouter, useSearchParams } from "next/navigation"
 import DualInquiryButton from "./dual-inquiry-button"
 
 // Define the Product type for type safety
@@ -28,53 +30,178 @@ interface ProductGridProps {
   category?: string
   limit?: number
   searchQuery?: string
+  sortOrder?: string
+  onResultsCount?: (count: number) => void
 }
 
-const ProductGrid = ({ featured = false, category, limit, searchQuery = "" }: ProductGridProps) => {
+const ProductGrid = ({ 
+  featured = false, 
+  category, 
+  limit, 
+  searchQuery = "",
+  sortOrder = "relevance",
+  onResultsCount
+}: ProductGridProps) => {
   const router = useRouter()
+  const searchParams = useSearchParams()
   const [products, setProducts] = useState<Product[]>([])
+
+  // Get filter values from URL - memoize to avoid recalculations
+  const filters = useMemo(() => {
+    return {
+      categories: searchParams.get("category")?.split(",") || [],
+      packaging: searchParams.get("packaging")?.split(",") || []
+    }
+  }, [searchParams])
+
+  // Memoize all products to avoid recreating this array on every render
+  const allProducts = useMemo(() => {
+    return [
+      ...(redChilliProducts || []), 
+      ...(milletsProducts || []), 
+      ...(spicesProducts || []),
+      ...(herbalFruitPowders || []),
+      ...(indianPulses || [])
+    ] as Product[];
+  }, []);
+
+  // Score a product for search relevance
+  const scoreProduct = useCallback((product: Product, query: string): number => {
+    if (!query) return 0;
+    
+    const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 0);
+    let score = 0;
+    
+    // Name matches are highest priority
+    if (product.name.toLowerCase() === query.toLowerCase()) {
+      score += 100; // Exact match to name
+    } else if (product.name.toLowerCase().startsWith(query.toLowerCase())) {
+      score += 50;  // Name starts with query
+    } else if (product.name.toLowerCase().includes(query.toLowerCase())) {
+      score += 30;  // Name contains query
+    }
+    
+    // Check for matches with individual terms in search query
+    searchTerms.forEach(term => {
+      if (product.name.toLowerCase().includes(term)) {
+        score += 10;
+      }
+      if (product.description.toLowerCase().includes(term)) {
+        score += 5;
+      }
+      if (product.category.toLowerCase().includes(term)) {
+        score += 3;
+      }
+      
+      // Check product details if available
+      if (product.details) {
+        Object.values(product.details).forEach((value: any) => {
+          if (String(value).toLowerCase().includes(term)) {
+            score += 2;
+          }
+        });
+      }
+      
+      // Check benefits if available
+      if (product.benefits) {
+        product.benefits.forEach((benefit: string) => {
+          if (benefit.toLowerCase().includes(term)) {
+            score += 2;
+          }
+        });
+      }
+    });
+    
+    return score;
+  }, []);
 
   useEffect(() => {
     try {
-      // Combine all product data
-      let allProducts = [
-        ...(redChilliProducts || []), 
-        ...(milletsProducts || []), 
-        ...(spicesProducts || [])
-      ] as Product[];
+      // Start with the memoized product list
+      let filteredProducts = [...allProducts];
 
       // Filter by featured if needed
       if (featured) {
-        allProducts = allProducts.filter((product) => product.featured)
+        filteredProducts = filteredProducts.filter((product) => product.featured)
       }
 
-      // Filter by category if provided
+      // Filter by category if provided as a prop
       if (category) {
-        allProducts = allProducts.filter((product) => product.category === category)
+        filteredProducts = filteredProducts.filter((product) => product.category === category)
+      }
+      // Filter by categories from URL parameters
+      else if (filters.categories.length > 0) {
+        filteredProducts = filteredProducts.filter((product) => 
+          filters.categories.includes(product.category)
+        )
+      }
+
+      // Filter by packaging if available in product details
+      if (filters.packaging.length > 0) {
+        filteredProducts = filteredProducts.filter((product) => {
+          // Check if the product has packaging information in details
+          if (product.details && product.details.packingDetails) {
+            const packingDetails = product.details.packingDetails.toLowerCase();
+            // Check if any of the selected packaging sizes appear in the packaging details
+            return filters.packaging.some(size => 
+              packingDetails.includes(size.toLowerCase())
+            );
+          }
+          return false;
+        });
       }
 
       // Filter by search query if provided
       if (searchQuery) {
-        const query = searchQuery.toLowerCase()
-        allProducts = allProducts.filter(
-          (product) =>
-            product.name.toLowerCase().includes(query) ||
-            product.description.toLowerCase().includes(query) ||
-            product.category.toLowerCase().includes(query),
-        )
+        // Score products for search relevance
+        const scoredProducts = filteredProducts.map(product => ({
+          product,
+          score: scoreProduct(product, searchQuery)
+        }));
+        
+        // Filter out products with zero score (no match)
+        const matchingProducts = scoredProducts.filter(item => item.score > 0);
+        
+        // Sort based on the selected sort order
+        if (sortOrder === "nameAsc") {
+          matchingProducts.sort((a, b) => a.product.name.localeCompare(b.product.name));
+        } else if (sortOrder === "nameDesc") {
+          matchingProducts.sort((a, b) => b.product.name.localeCompare(a.product.name));
+        } else {
+          // Default sorting by relevance score
+          matchingProducts.sort((a, b) => b.score - a.score);
+        }
+        
+        // Extract just the products
+        filteredProducts = matchingProducts.map(item => item.product);
+      } else {
+        // If no search query, apply regular sorting
+        if (sortOrder === "nameAsc") {
+          filteredProducts.sort((a, b) => a.name.localeCompare(b.name));
+        } else if (sortOrder === "nameDesc") {
+          filteredProducts.sort((a, b) => b.name.localeCompare(a.name));
+        }
       }
 
       // Apply limit if provided
       if (limit && limit > 0) {
-        allProducts = allProducts.slice(0, limit)
+        filteredProducts = filteredProducts.slice(0, limit)
       }
 
-      setProducts(allProducts)
+      // Report the count of results to the parent component if callback provided
+      if (onResultsCount) {
+        onResultsCount(filteredProducts.length);
+      }
+
+      setProducts(filteredProducts)
     } catch (error) {
       console.error("Error processing products:", error);
       setProducts([]);
+      if (onResultsCount) {
+        onResultsCount(0);
+      }
     }
-  }, [featured, category, limit, searchQuery])
+  }, [featured, category, limit, searchQuery, filters, allProducts, sortOrder, scoreProduct, onResultsCount])
 
   const viewProduct = (product: Product) => {
     if (product && product.category && product.slug) {
@@ -113,6 +240,11 @@ const ProductGrid = ({ featured = false, category, limit, searchQuery = "" }: Pr
                   Featured
                 </div>
               )}
+              <div className="absolute top-4 left-4">
+                <span className="bg-red-100 text-red-700 text-xs px-2 py-1 rounded-full">
+                  {product.category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                </span>
+              </div>
             </div>
             <div className="p-6">
               <h3 

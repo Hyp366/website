@@ -11,10 +11,60 @@ import Link from "next/link"
 import { redChilliProducts } from "@/data/red-chilli-products"
 import { milletsProducts } from "@/data/millets-products"
 import { spicesProducts } from "@/data/spices-products"
+import { herbalFruitPowders } from "@/data/herbal-fruit-powders"
+import { indianPulses } from "@/data/indian-pulses"
 
 interface SearchBarProps {
   onClose?: () => void
 }
+
+// Define a scoring function to rank search results by relevance
+const scoreSearchResult = (product: any, query: string): number => {
+  const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 0);
+  let score = 0;
+  
+  // Name matches are highest priority
+  if (product.name.toLowerCase() === query.toLowerCase()) {
+    score += 100; // Exact match to name
+  } else if (product.name.toLowerCase().startsWith(query.toLowerCase())) {
+    score += 50;  // Name starts with query
+  } else if (product.name.toLowerCase().includes(query.toLowerCase())) {
+    score += 30;  // Name contains query
+  }
+  
+  // Check for matches with individual terms in search query
+  searchTerms.forEach(term => {
+    if (product.name.toLowerCase().includes(term)) {
+      score += 10;
+    }
+    if (product.description.toLowerCase().includes(term)) {
+      score += 5;
+    }
+    if (product.category.toLowerCase().includes(term)) {
+      score += 3;
+    }
+    
+    // Check product details if available
+    if (product.details) {
+      Object.values(product.details).forEach((value: any) => {
+        if (String(value).toLowerCase().includes(term)) {
+          score += 2;
+        }
+      });
+    }
+    
+    // Check benefits if available
+    if (product.benefits) {
+      product.benefits.forEach((benefit: string) => {
+        if (benefit.toLowerCase().includes(term)) {
+          score += 2;
+        }
+      });
+    }
+  });
+  
+  return score;
+};
 
 const SearchBar = ({ onClose }: SearchBarProps) => {
   const [searchQuery, setSearchQuery] = useState("")
@@ -24,25 +74,49 @@ const SearchBar = ({ onClose }: SearchBarProps) => {
   const router = useRouter()
 
   // Combine all products for search
-  const allProducts = [...redChilliProducts, ...milletsProducts, ...spicesProducts]
+  const allProducts = [
+    ...redChilliProducts, 
+    ...milletsProducts, 
+    ...spicesProducts, 
+    ...herbalFruitPowders,
+    ...indianPulses
+  ]
 
   useEffect(() => {
     // Filter products based on search query
     if (searchQuery.trim().length > 1) {
-      const query = searchQuery.toLowerCase()
-      const filtered = allProducts.filter(
-        (product) =>
-          product.name.toLowerCase().includes(query) ||
-          product.description.toLowerCase().includes(query) ||
-          product.category.toLowerCase().includes(query),
-      )
-      setSuggestions(filtered.slice(0, 5)) // Limit to 5 suggestions
+      const query = searchQuery.toLowerCase().trim()
+      
+      // Filter products that match any part of the query
+      const filtered = allProducts.filter(product => {
+        const nameMatch = product.name.toLowerCase().includes(query);
+        const descMatch = product.description.toLowerCase().includes(query);
+        const categoryMatch = product.category.toLowerCase().includes(query);
+        
+        // Match individual words in search query
+        const terms = query.split(' ').filter(term => term.length > 0);
+        const termMatch = terms.some(term => 
+          product.name.toLowerCase().includes(term) || 
+          product.description.toLowerCase().includes(term) ||
+          product.category.toLowerCase().includes(term)
+        );
+        
+        return nameMatch || descMatch || categoryMatch || termMatch;
+      });
+      
+      // Score and sort results by relevance
+      const scoredResults = filtered.map(product => ({
+        ...product,
+        score: scoreSearchResult(product, query)
+      })).sort((a, b) => b.score - a.score);
+      
+      setSuggestions(scoredResults.slice(0, 6)) // Show top 6 suggestions
       setShowSuggestions(true)
     } else {
       setSuggestions([])
       setShowSuggestions(false)
     }
-  }, [searchQuery])
+  }, [searchQuery, allProducts])
 
   // Handle click outside to close suggestions
   useEffect(() => {
@@ -68,10 +142,18 @@ const SearchBar = ({ onClose }: SearchBarProps) => {
   }
 
   const handleSuggestionClick = (suggestion: any) => {
-    router.push(`/products/${suggestion.category}/${suggestion.slug}`)
+    router.push(`/products/${suggestion.category}?product=${suggestion.slug}`)
     setShowSuggestions(false)
     if (onClose) onClose()
   }
+
+  // Format category name for display
+  const formatCategoryName = (category: string) => {
+    return category
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
 
   return (
     <div className="relative" ref={suggestionsRef}>
@@ -110,7 +192,7 @@ const SearchBar = ({ onClose }: SearchBarProps) => {
 
       {/* Search Suggestions */}
       {showSuggestions && suggestions.length > 0 && (
-        <div className="absolute z-50 mt-1 w-full bg-white rounded-md shadow-lg border border-gray-200 max-h-80 overflow-auto">
+        <div className="absolute z-50 mt-1 w-full bg-white rounded-md shadow-lg border border-gray-200 max-h-96 overflow-auto">
           <ul className="py-1">
             {suggestions.map((suggestion) => (
               <li
@@ -122,9 +204,14 @@ const SearchBar = ({ onClose }: SearchBarProps) => {
                   <div className="text-red-600 mr-2">
                     <Search className="h-4 w-4" />
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <p className="font-medium">{suggestion.name}</p>
-                    <p className="text-sm text-gray-500 truncate">{suggestion.description}</p>
+                    <div className="flex justify-between items-center">
+                      <p className="text-sm text-gray-500 truncate max-w-[70%]">{suggestion.description}</p>
+                      <span className="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded-full">
+                        {formatCategoryName(suggestion.category)}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </li>

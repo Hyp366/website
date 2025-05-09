@@ -73,10 +73,11 @@ function ProductDetailContent() {
                 <p className="text-gray-700 text-lg mb-8">{selectedProduct.description}</p>
 
                 <Tabs defaultValue="features" className="mb-8">
-                  <TabsList className="grid grid-cols-3 w-full">
+                  <TabsList className="grid grid-cols-4 w-full">
                     <TabsTrigger value="features">Features</TabsTrigger>
                     <TabsTrigger value="specifications">Specifications</TabsTrigger>
                     <TabsTrigger value="benefits">Benefits</TabsTrigger>
+                    <TabsTrigger value="pricing">Pricing & Packages</TabsTrigger>
                   </TabsList>
                   
                   <TabsContent value="features" className="p-4 bg-gray-50 rounded-md mt-2">
@@ -134,6 +135,39 @@ function ProductDetailContent() {
                         </li>
                       ))}
                     </ul>
+                  </TabsContent>
+                  
+                  <TabsContent value="pricing" className="p-4 bg-gray-50 rounded-md mt-2">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="w-1/3">Specification</TableHead>
+                          <TableHead>Details</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        <TableRow>
+                          <TableCell className="font-medium">FOB Price:</TableCell>
+                          <TableCell>US1979.00 – US1999.00 Per Metric ton</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium">Min.Order Quantity:</TableCell>
+                          <TableCell>6.5 MT( 20 ft container )</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium">Supply Ability:</TableCell>
+                          <TableCell>50 Metric Ton/Metric Tons per Month</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium">Port:</TableCell>
+                          <TableCell>Chennai</TableCell>
+                        </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium">Payment Terms:</TableCell>
+                          <TableCell>T/T (50 % Advance Rest 50 % Scan copy of BL)</TableCell>
+                        </TableRow>
+                      </TableBody>
+                    </Table>
                   </TabsContent>
                 </Tabs>
 

@@ -28,6 +28,8 @@ const Header = () => {
         { name: "Red Chilli", href: "/products/red-chilli" },
         { name: "Millets", href: "/products/millets" },
         { name: "Spices", href: "/products/spices" },
+        { name: "Herbal & Fruit Powders", href: "/products/herbal-fruit-powders" },
+        { name: "Indian Pulses", href: "/products/indian-pulses" },
       ],
     },
     { name: "Infrastructure", href: "/infrastructure" },

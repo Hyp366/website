@@ -6,8 +6,8 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 export const metadata: Metadata = {
   title: "Contact Us | Hearty You Products India Pvt Ltd",
   description:
-    "Get in touch with Hearty You Products India Pvt Ltd. Contact us for inquiries about our Red Chilli, Millets, and Spices products.",
-  keywords: "contact Hearty You Products, red chilli supplier contact, organic food company India contact",
+    "Get in touch with Hearty You Products India Pvt Ltd. Contact us for inquiries about our Red Chilli, Millets, Spices, and Herbal & Fruit Powders products.",
+  keywords: "contact Hearty You Products, red chilli supplier contact, organic food company India contact, herbal powders, fruit powders",
 }
 
 export default function ContactPage() {
@@ -57,11 +57,13 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Our Address</h3>
                     <p className="text-gray-600">
-                      123 Business Park, Industrial Area
+                      Hearty You Products India Pvt Ltd,
                       <br />
-                      City Name, State - 123456
+                      #13068, Prestige Shantiniketan,
                       <br />
-                      India
+                      Whitefield Hoodie Main Road,
+                      <br />
+                      Bangalore 560048, India
                     </p>
                   </div>
                 </div>
@@ -73,9 +75,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
                     <p className="text-gray-600">
-                      +91 98765 43210
-                      <br />
-                      +91 12345 67890
+                      +91 93412 13729
                     </p>
                   </div>
                 </div>
@@ -87,9 +87,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
                     <p className="text-gray-600">
-                      info@heartyyouproducts.com
-                      <br />
-                      sales@heartyyouproducts.com
+                      n.manjusha18@gmail.com
                     </p>
                   </div>
                 </div>

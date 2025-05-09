@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowLeft, Check, MessageCircle } from "lucide-react"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { useSearchParams, useRouter } from "next/navigation"
-import { milletsProducts } from "@/data/millets-products"
+import { herbalFruitPowders } from "@/data/herbal-fruit-powders"
 import DualInquiryButton from "@/components/dual-inquiry-button"
 
 // Wrapper component to handle search params with Suspense
@@ -20,7 +20,7 @@ function ProductDetailContent() {
 
   useEffect(() => {
     if (productSlug) {
-      const product = milletsProducts.find((p) => p.slug === productSlug)
+      const product = herbalFruitPowders.find((p) => p.slug === productSlug)
       setSelectedProduct(product || null)
     } else {
       setSelectedProduct(null)
@@ -28,11 +28,11 @@ function ProductDetailContent() {
   }, [productSlug])
 
   const viewProduct = (slug: string) => {
-    router.push(`/products/millets?product=${slug}`)
+    router.push(`/products/herbal-fruit-powders?product=${slug}`)
   }
 
   const backToListing = () => {
-    router.push("/products/millets")
+    router.push("/products/herbal-fruit-powders")
   }
 
   // Product Detail View
@@ -43,7 +43,7 @@ function ProductDetailContent() {
         <div className="container mx-auto px-4 py-6">
           <Button variant="ghost" className="flex items-center text-red-600 hover:text-red-700" onClick={backToListing}>
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Millets Products
+            Back to Herbal & Fruit Powders
           </Button>
         </div>
 
@@ -88,7 +88,7 @@ function ProductDetailContent() {
                       </li>
                       <li className="flex items-start">
                         <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                        <span>Nutrient-rich ancient grain</span>
+                        <span>100% natural with no additives</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
@@ -175,7 +175,7 @@ function ProductDetailContent() {
                   <div className="flex-grow">
                     <DualInquiryButton
                       productName={selectedProduct.name}
-                      productCategory="millets"
+                      productCategory="herbal-fruit-powders"
                       size="lg"
                       fullWidth={true}
                     />
@@ -200,7 +200,7 @@ function ProductDetailContent() {
             <h2 className="text-2xl font-bold mb-8 text-red-600">Related Products</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {milletsProducts
+              {herbalFruitPowders
                 .filter(relatedProduct => relatedProduct.id !== selectedProduct.id)
                 .slice(0, 4)
                 .map((relatedProduct) => (
@@ -259,16 +259,16 @@ function ProductDetailContent() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://media.istockphoto.com/id/1178295792/photo/millet-field.jpg?s=612x612&w=0&k=20&c=64czBw46ZrbPu4ViWHNTS-mK290jVN4IVl99PBPNdVs="
-            alt="Millets Products"
+            src="https://images.unsplash.com/photo-1615485500704-8e990f9671c8?q=80&w=1920&auto=format&fit=crop"
+            alt="Herbal & Fruit Powders"
             fill
             className="object-cover brightness-50"
             priority
           />
         </div>
         <div className="container relative z-10 mx-auto px-4 text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Millets Products</h1>
-          <p className="text-xl max-w-2xl">Nutritious, healthy, and sustainably sourced Millet varieties</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Herbal & Fruit Powders</h1>
+          <p className="text-xl max-w-2xl">100% natural, premium quality herbal and fruit powders</p>
         </div>
       </section>
 
@@ -285,10 +285,10 @@ function ProductDetailContent() {
       {/* Product Grid */}
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-8">Our Millets Products</h2>
+          <h2 className="text-2xl font-bold mb-8">Our Herbal & Fruit Powders</h2>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {milletsProducts.map((product) => (
+            {herbalFruitPowders.map((product) => (
               <div
                 key={product.id}
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
@@ -322,7 +322,7 @@ function ProductDetailContent() {
                     <div className="flex-none">
                       <DualInquiryButton
                         productName={product.name}
-                        productCategory="millets"
+                        productCategory="herbal-fruit-powders"
                         size="sm"
                       />
                     </div>
@@ -338,7 +338,7 @@ function ProductDetailContent() {
 }
 
 // Main component with Suspense for CSR bailout
-export default function MilletsPage() {
+export default function HerbalFruitPowdersPage() {
   return (
     <Suspense fallback={
       <div className="p-8 flex justify-center items-center min-h-screen">
@@ -352,4 +352,4 @@ export default function MilletsPage() {
       <ProductDetailContent />
     </Suspense>
   )
-}
+} 

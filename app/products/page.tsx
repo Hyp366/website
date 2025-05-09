@@ -6,8 +6,8 @@ import ProductFilter from "@/components/product-filter"
 export const metadata: Metadata = {
   title: "Products | Hearty You Products India Pvt Ltd",
   description:
-    "Explore our premium Red Chilli, Millets, and Spices products. High-quality, organic, and sustainably sourced ingredients for your kitchen.",
-  keywords: "red chilli products, organic millets, natural spices, Hearty You Products catalog",
+    "Explore our premium Red Chilli, Millets, Spices, Herbal & Fruit Powders, and Indian Pulses. High-quality, organic, and sustainably sourced ingredients for your kitchen and wellness.",
+  keywords: "red chilli products, organic millets, natural spices, herbal powders, fruit powders, indian pulses, toor dal, masoor dal, moong dal, Hearty You Products catalog",
 }
 
 export default function ProductsPage() {
@@ -26,7 +26,7 @@ export default function ProductsPage() {
         </div>
         <div className="container relative z-10 mx-auto px-4 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Products</h1>
-          <p className="text-xl max-w-2xl">Discover our premium selection of Red Chilli, Millets, and Spices</p>
+          <p className="text-xl max-w-2xl">Discover our premium selection of Red Chilli, Millets, Spices, Herbal & Fruit Powders, and Indian Pulses</p>
         </div>
       </section>
 
