@@ -33,6 +33,24 @@ const slides = [
     buttonText: "View Spices",
     buttonLink: "/products/spices",
   },
+  {
+    id: 4,
+    image: "https://images.unsplash.com/photo-1615485500704-8e990f9671c8?q=80&w=1920&auto=format&fit=crop",
+    mobileImage: "https://images.unsplash.com/photo-1615485500704-8e990f9671c8?q=80&w=750&auto=format&fit=crop",
+    title: "Herbal & Fruit Powders",
+    description: "100% natural, premium quality herbal and fruit powders for health and wellness",
+    buttonText: "Explore Powders",
+    buttonLink: "/products/herbal-fruit-powders",
+  },
+  {
+    id: 5,
+    image: "https://images.unsplash.com/photo-1612257499637-e18166f7cf15?q=80&w=1920&auto=format&fit=crop",
+    mobileImage: "https://images.unsplash.com/photo-1612257499637-e18166f7cf15?q=80&w=750&auto=format&fit=crop",
+    title: "Premium Indian Pulses",
+    description: "Finest quality pulses sustainably sourced from selected regions in India",
+    buttonText: "View Pulses",
+    buttonLink: "/products/indian-pulses",
+  },
 ]
 
 const HeroSlider = () => {
