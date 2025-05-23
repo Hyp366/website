@@ -206,18 +206,8 @@ export default function InfrastructurePage() {
                 description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
               },
               {
-                country: "Canada",
-                image: "https://images.unsplash.com/photo-1569681157442-5f15f6bdd10d?q=80&w=600&auto=format&fit=crop",
-                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
-              },
-              {
                 country: "United Kingdom",
                 image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=600&auto=format&fit=crop",
-                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
-              },
-              {
-                country: "Australia",
-                image: "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?q=80&w=600&auto=format&fit=crop",
                 description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
               },
               {
@@ -231,13 +221,23 @@ export default function InfrastructurePage() {
                 description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
               },
               {
-                country: "UAE",
-                image: "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?q=80&w=600&auto=format&fit=crop",
+                country: "Spain",
+                image: "https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=80&w=600&auto=format&fit=crop",
                 description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
               },
               {
-                country: "Singapore",
-                image: "https://images.unsplash.com/photo-1565967511849-76a60a516170?q=80&w=600&auto=format&fit=crop",
+                country: "Sweden",
+                image: "https://images.unsplash.com/photo-1518994304117-b5a2c83174e1?q=80&w=600&auto=format&fit=crop",
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "Belgium",
+                image: "https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=600&auto=format&fit=crop", 
+                description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
+              },
+              {
+                country: "UAE",
+                image: "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?q=80&w=600&auto=format&fit=crop",
                 description: "Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses"
               }
             ].map((country, index) => (

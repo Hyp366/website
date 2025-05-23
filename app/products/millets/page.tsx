@@ -166,6 +166,10 @@ function ProductDetailContent() {
                           <TableCell className="font-medium">Payment Terms:</TableCell>
                           <TableCell>T/T (50 % Advance Rest 50 % Scan copy of BL)</TableCell>
                         </TableRow>
+                        <TableRow>
+                          <TableCell className="font-medium">Packaging:</TableCell>
+                          <TableCell>5kg, 10kg, 25kg, polly bags and gunny bags in neat packaging</TableCell>
+                        </TableRow>
                       </TableBody>
                     </Table>
                   </TabsContent>
