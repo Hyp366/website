@@ -17,6 +17,8 @@ function ProductDetailContent() {
   const router = useRouter()
   const productSlug = searchParams.get("product")
   const [selectedProduct, setSelectedProduct] = useState<any>(null)
+  const [filteredProducts, setFilteredProducts] = useState<any[]>(redChilliProducts)
+  const varietyParam = searchParams.get("variety")
 
   useEffect(() => {
     if (productSlug) {
@@ -25,7 +27,65 @@ function ProductDetailContent() {
     } else {
       setSelectedProduct(null)
     }
-  }, [productSlug])
+
+    // Filter products based on variety parameter
+    if (varietyParam) {
+      let filtered = [...redChilliProducts]
+      
+      // Handle different variety filters
+      if (varietyParam.startsWith('byadgi')) {
+        filtered = filtered.filter(p => 
+          p.name.toLowerCase().includes('byadgi') || 
+          p.description.toLowerCase().includes('byadgi')
+        )
+
+        // Further filter for specific Byadgi varieties
+        if (varietyParam === 'byadgi-2043-syngenta') {
+          filtered = filtered.filter(p => 
+            p.name.toLowerCase().includes('2043') || 
+            p.description.toLowerCase().includes('2043')
+          )
+        } else if (varietyParam === 'byadgi-kaddi-kdl') {
+          filtered = filtered.filter(p => 
+            p.name.toLowerCase().includes('kaddi') || 
+            p.description.toLowerCase().includes('kaddi')
+          )
+        } else if (varietyParam === 'byadgi-355') {
+          filtered = filtered.filter(p => 
+            p.name.toLowerCase().includes('355') || 
+            p.description.toLowerCase().includes('355')
+          )
+        }
+      } else if (varietyParam.startsWith('guntur')) {
+        filtered = filtered.filter(p => 
+          p.name.toLowerCase().includes('guntur') || 
+          p.description.toLowerCase().includes('guntur')
+        )
+
+        // Further filter for specific Guntur varieties
+        if (varietyParam === 'guntur-teja-s17') {
+          filtered = filtered.filter(p => 
+            p.name.toLowerCase().includes('teja') || 
+            p.description.toLowerCase().includes('teja')
+          )
+        } else if (varietyParam === 'guntur-334-s4') {
+          filtered = filtered.filter(p => 
+            p.name.toLowerCase().includes('334') || 
+            p.description.toLowerCase().includes('334')
+          )
+        } else if (varietyParam === 'guntur-sannam-s10') {
+          filtered = filtered.filter(p => 
+            p.name.toLowerCase().includes('sannam') || 
+            p.description.toLowerCase().includes('sannam')
+          )
+        }
+      }
+      
+      setFilteredProducts(filtered)
+    } else {
+      setFilteredProducts(redChilliProducts)
+    }
+  }, [productSlug, varietyParam])
 
   const viewProduct = (slug: string) => {
     router.push(`/products/red-chilli?product=${slug}`)
@@ -146,10 +206,7 @@ function ProductDetailContent() {
                         </TableRow>
                       </TableHeader>
                       <TableBody>
-                        <TableRow>
-                          <TableCell className="font-medium">FOB Price:</TableCell>
-                          <TableCell>US1979.00 – US1999.00 Per Metric ton</TableCell>
-                        </TableRow>
+
                         <TableRow>
                           <TableCell className="font-medium">Min.Order Quantity:</TableCell>
                           <TableCell>6.5 MT( 20 ft container )</TableCell>
@@ -289,10 +346,32 @@ function ProductDetailContent() {
       {/* Product Grid */}
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-8">Our Red Chilli Products</h2>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2 text-red-600">
+            {varietyParam ? (
+              <>
+                {varietyParam.includes('byadgi') && 'Byadgi '}
+                {varietyParam.includes('guntur') && 'Guntur '}
+                Red Chilli Products
+              </>
+            ) : (
+              'Red Chilli Products'
+            )}
+          </h1>
+          <p className="text-gray-600 mb-8 max-w-3xl">
+            {varietyParam ? (
+              <>
+                {varietyParam.includes('byadgi') && 'Explore our premium Byadgi chilli varieties known for their deep red color and exceptional color extraction properties. '}
+                {varietyParam.includes('guntur') && 'Discover our premium Guntur chilli varieties known for their balanced heat and distinctive flavor profiles. '}
+                Each variety is carefully selected and processed to ensure exceptional flavor, color, and quality.
+              </>
+            ) : (
+              'Explore our premium quality red chilli products sourced directly from the finest growing regions of India. Each variety is carefully selected and processed to ensure exceptional flavor, color, and quality.'
+            )}
+          </p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {redChilliProducts.map((product) => (
+          {filteredProducts.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredProducts.map((product) => (
               <div
                 key={product.id}
                 className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
@@ -334,7 +413,19 @@ function ProductDetailContent() {
                 </div>
               </div>
             ))}
-          </div>
+            </div>
+          ) : (
+            <div className="bg-white p-8 rounded-xl shadow text-center">
+              <h3 className="text-xl font-medium mb-4">No products found for this variety</h3>
+              <p className="text-gray-600 mb-6">We couldn't find any products matching your selected variety. Please try another variety or contact us for more information.</p>
+              <Button
+                onClick={() => router.push('/products/red-chilli')}
+                className="bg-red-600 hover:bg-red-700 text-white"
+              >
+                View All Red Chilli Products
+              </Button>
+            </div>
+          )}
         </div>
       </section>
     </div>

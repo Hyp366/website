@@ -1,5 +1,30 @@
 export const indianPulses = [
   {
+    id: 7,
+    name: "Fried Gram Dal",
+    category: "indian-pulses",
+    slug: "fried-gram-dal",
+    image: "https://images.unsplash.com/photo-1612257999756-11e70535e280?q=80&w=800&auto=format&fit=crop",
+    description: "Crunchy and nutritious fried gram dal, perfect for snacking and adding to various dishes.",
+    featured: true,
+    details: {
+      origin: "Selected regions of India",
+      type: "Roasted Bengal Gram (Cicer arietinum)",
+      cultivation: "Organic, Pesticide-free",
+      texture: "Crunchy",
+      color: "Golden Brown",
+      cookingTime: "Ready to eat",
+      packingDetails: "5kg, 10kg, 25kg bags available for bulk orders",
+    },
+    benefits: [
+      "High protein content (20-22%)",
+      "Rich in dietary fiber and essential minerals",
+      "Good source of complex carbohydrates",
+      "Contains iron, calcium, and B vitamins",
+      "Convenient ready-to-eat snack with long shelf life"
+    ],
+  },
+  {
     id: 1,
     name: "Masoor Dal Split",
     category: "indian-pulses",

@@ -4,10 +4,11 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown, Search } from "lucide-react"
+import { Menu, X, ChevronDown, Search, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
 import SearchBar from "@/components/search-bar"
+import ChilliesVarietiesMenu from "@/components/chillies-varieties-menu"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -112,13 +113,52 @@ const Header = () => {
                   <div className="absolute left-0 mt-1 w-48 origin-top-left rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                     <div className="py-1">
                       {item.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.name}
-                          href={subItem.href}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600"
-                        >
-                          {subItem.name}
-                        </Link>
+                        <div key={subItem.name}>
+                          {subItem.name === "Red Chilli" ? (
+                            <div className="flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">
+                              <Link href={subItem.href}>
+                                {subItem.name}
+                              </Link>
+                              <div className="ml-2">
+                                <ChevronRight className="h-4 w-4 text-gray-500" />
+                              </div>
+                              <div className="absolute left-full top-0 w-48 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                                <div className="py-1">
+                                  <Link href="/products/red-chilli?variety=byadgi" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
+                                    Byadgi Chillies
+                                    <ChevronRight className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
+                                    <div className="absolute left-full top-0 w-48 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                                      <div className="py-1">
+                                        <Link href="/products/red-chilli?variety=byadgi-2043-syngenta" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">2043 Syngenta</Link>
+                                        <Link href="/products/red-chilli?variety=byadgi-kaddi-kdl" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Byadgi Kaddi (KDL)</Link>
+                                        <Link href="/products/red-chilli?variety=byadgi-355" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Byadgi-355</Link>
+                                      </div>
+                                    </div>
+                                  </Link>
+                                  <Link href="/products/red-chilli?variety=guntur" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
+                                    Guntur Chillies
+                                    <ChevronRight className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
+                                    <div className="absolute left-full top-0 w-48 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                                      <div className="py-1">
+                                        <Link href="/products/red-chilli?variety=guntur-teja-s17" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Teja S17</Link>
+                                        <Link href="/products/red-chilli?variety=guntur-334-s4" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">334 S4</Link>
+                                        <Link href="/products/red-chilli?variety=guntur-sannam-s10" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Sannam S10</Link>
+                                      </div>
+                                    </div>
+                                  </Link>
+
+                                </div>
+                              </div>
+                            </div>
+                          ) : (
+                            <Link
+                              href={subItem.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600"
+                            >
+                              {subItem.name}
+                            </Link>
+                          )}
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -182,17 +222,36 @@ const Header = () => {
                   {item.submenu && (
                     <div className="ml-4 mt-2 space-y-2">
                       {item.submenu.map((subItem) => (
-                        <Link
-                          key={subItem.name}
-                          href={subItem.href}
-                          className={cn(
-                            "block py-1 text-base",
-                            pathname === subItem.href ? "text-red-600" : "text-gray-600 hover:text-red-600",
+                        <div key={subItem.name}>
+                          {subItem.name === "Red Chilli" ? (
+                            <div className="flex items-center py-1">
+                              <Link
+                                href={subItem.href}
+                                className={cn(
+                                  "text-base",
+                                  pathname === subItem.href ? "text-red-600" : "text-gray-600 hover:text-red-600",
+                                )}
+                                onClick={() => setIsMenuOpen(false)}
+                              >
+                                {subItem.name}
+                              </Link>
+                              <div className="ml-2">
+                                <ChilliesVarietiesMenu />
+                              </div>
+                            </div>
+                          ) : (
+                            <Link
+                              href={subItem.href}
+                              className={cn(
+                                "block py-1 text-base",
+                                pathname === subItem.href ? "text-red-600" : "text-gray-600 hover:text-red-600",
+                              )}
+                              onClick={() => setIsMenuOpen(false)}
+                            >
+                              {subItem.name}
+                            </Link>
                           )}
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {subItem.name}
-                        </Link>
+                        </div>
                       ))}
                     </div>
                   )}
