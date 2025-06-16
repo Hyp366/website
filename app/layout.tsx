@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Hearty You Products India Pvt Ltd | Organic Red Chilli, Millets, Spices & Herbal Powders",
   description:
-    "Premium quality organic Red Chilli, Millets, Spices and Herbal & Fruit Powders from Hearty You Products India Pvt Ltd located in Bangalore. Natural, healthy, and sustainably sourced ingredients.",
+    "Discover premium quality organic Red Chilli, Millets, Spices, and Herbal & Fruit Powders from Hearty You Products India Pvt Ltd in Bangalore. Our products are naturally sourced, sustainably grown, and packed with authentic flavors and nutrients for your health and culinary delight.",
   keywords: "Hearty You Products, organic red chilli, millets India, organic spices, natural food products, herbal powders, fruit powders, moringa, neem powder, Bangalore",
   generator: 'v0.dev'
 }

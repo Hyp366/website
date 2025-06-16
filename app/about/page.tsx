@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react"
 export const metadata: Metadata = {
   title: "About Us | Hearty You Products India Pvt Ltd",
   description:
-    "Learn about Hearty You Products India Pvt Ltd, our mission, values, and the team behind our premium Red Chilli, Millets, and Spices.",
+    "Discover the story behind Hearty You Products India Pvt Ltd, our mission to deliver premium organic Red Chilli, Millets, and Spices, and meet the passionate team committed to sustainable and natural food solutions.",
   keywords: "Hearty You Products about, organic food company India, red chilli producer, millets supplier",
 }
 
@@ -190,94 +190,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Certification Section */}
-      <section className="py-16 sm:py-24 bg-gray-50 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-72 h-72 bg-red-100/30 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-100/30 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-red-600 inline-block relative">
-              Our Certifications
-              <span className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-red-600 rounded"></span>
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              We maintain the highest standards of quality and safety through internationally recognized certifications
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <div className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-24 h-24 mx-auto mb-6 p-2 bg-white rounded-full shadow-sm">
-                <div className="w-full h-full rounded-full border-2 border-red-100 flex items-center justify-center p-2">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1589464484284-33164693a379?q=80&w=150&auto=format&fit=crop" 
-                    alt="Organic Certification" 
-                    width={100} 
-                    height={100}
-                    className="object-contain rounded-full"
-                  />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-red-600">Organic Certification</h3>
-              <p className="text-gray-600">
-                Our products are certified organic, ensuring they are grown without synthetic pesticides or fertilizers
-              </p>
-              <div className="mt-6">
-                <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium">
-                  USDA Organic
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-24 h-24 mx-auto mb-6 p-2 bg-white rounded-full shadow-sm">
-                <div className="w-full h-full rounded-full border-2 border-red-100 flex items-center justify-center p-2">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=150&auto=format&fit=crop" 
-                    alt="ISO Certification" 
-                    width={100} 
-                    height={100}
-                    className="object-contain rounded-full"
-                  />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-red-600">ISO 22000:2018</h3>
-              <p className="text-gray-600">
-                We adhere to international standards for food safety management systems, ensuring quality at every step
-              </p>
-              <div className="mt-6">
-                <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium">
-                  Internationally Certified
-                </span>
-              </div>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-md text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="w-24 h-24 mx-auto mb-6 p-2 bg-white rounded-full shadow-sm">
-                <div className="w-full h-full rounded-full border-2 border-red-100 flex items-center justify-center p-2">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=150&auto=format&fit=crop" 
-                    alt="HACCP Certification" 
-                    width={100} 
-                    height={100}
-                    className="object-contain rounded-full"
-                  />
-                </div>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-red-600">HACCP</h3>
-              <p className="text-gray-600">
-                Our facilities follow Hazard Analysis Critical Control Point methodology to ensure food safety at all stages
-              </p>
-              <div className="mt-6">
-                <span className="px-4 py-2 bg-red-50 text-red-600 rounded-full text-sm font-medium">
-                  Food Safety Assured
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Removed Certifications Section */}
 
       {/* Export Destinations Section */}
       <section className="py-16 sm:py-24 bg-gray-50">

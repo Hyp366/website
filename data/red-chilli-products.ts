@@ -5,36 +5,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "334-s4-sannam-s10-red-chilli",
     image: "/images/chilli/334-s4-sannam-s10.jpg",
-    description:
-      "Premium 334/S4/SANNAM/S10 Dry Red Chilli from Guntur, India. Known for its rich color, balanced heat, and distinctive elongated shape with stem.",
-    featured: true,
-    details: {
-      productName: "334/S4/SANNAM/S10",
-      style: "Dried",
-      flavour: "Medium",
-      color: "Red",
-      pungencyInSHU: "25000-30000 (Heat)",
-      colourInASTA: "30-50 max",
-      length: "5-7 cm",
-      breath: "1.0-1.5cm",
-      skin: "Thin",
-      capsaicinContent: "0.2-0.3% max",
-      podsWithStalks: "2% maximum",
-      brokenChilies: "2% maximum",
-      looseSeeds: "2% maximum",
-      damagedPods: "1% maximum",
-      foreignMaterial: "1% maximum",
-      moisture: "14% maximum",
-      quality: "A/C Best",
-      origin: "Guntur, Andhra Pradesh, India",
-      packingDetails: "5,10,15,20,25 & 40 kg Cartoon/Jute/pp",
-    },
-    benefits: [
-      "Rich in Vitamins A, C, and E",
-      "Contains capsaicin, which has anti-inflammatory properties",
-      "Enhances metabolism and aids in weight management",
-      "Adds vibrant color and flavor to dishes",
+    alt: "334/S4/SANNAM/S10 Red Chilli - Premium quality dried red chillies",
+    title: "334/S4/SANNAM/S10 Red Chilli - Rich Colorful Essence",
+    description: "Experience the rich color and balanced heat of our 334/S4/SANNAM/S10 Red Chilli. Perfect for adding a vibrant kick to curries, sauces, and marinades, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
+    features: [
+      "Medium heat level (25,000-30,000 SHU)",
+      "Rich color for visual appeal",
+      "Versatile for various cuisines",
+      "Organically grown without synthetic pesticides",
+      "Sun-dried to lock in natural flavors"
     ],
+    benefits: [
+      "Enhances metabolism with capsaicin",
+      "Rich in vitamins A and C for immune support",
+      "Adds depth and heat to dishes",
+      "Supports sustainable farming practices"
+    ],
+    specifications: [
+      "Length: 5-7 cm",
+      "Moisture: 10-12%",
+      "Color: Red",
+      "Heat Level: Medium"
+    ],
+    details: {
+      origin: "Guntur, Andhra Pradesh, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 250,
+      "5kg": 1100,
+      "25kg": 5000
+    }
   },
   {
     id: 2,
@@ -42,35 +45,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "teja-s17-red-chilli",
     image: "/images/chilli/teja-s17.jpg",
-    description: "Premium Teja S17 dry red chilli from Guntur, India. Features a distinctive bright red color with medium length pods and consistent heat level.",
-    featured: true,
-    details: {
-      productName: "Teja/S17",
-      style: "Dried",
-      flavour: "Medium to Hot",
-      color: "Bright Red",
-      pungencyInSHU: "35000-45000 (Heat)",
-      colourInASTA: "40-60 max",
-      length: "6-8 cm",
-      breath: "1.0-1.5cm",
-      skin: "Medium",
-      capsaicinContent: "0.3-0.4% max",
-      podsWithStalks: "2% maximum",
-      brokenChilies: "2% maximum",
-      looseSeeds: "2% maximum",
-      damagedPods: "1% maximum",
-      foreignMaterial: "1% maximum",
-      moisture: "14% maximum",
-      quality: "A/C Best",
-      origin: "Guntur, Andhra Pradesh, India",
-      packingDetails: "5,10,15,20,25 kg Cartoon/Jute/pp",
-    },
-    benefits: [
-      "Adds rich, complex flavor to dishes",
-      "High in antioxidants and vitamins",
-      "Perfect for authentic Indian curries and dishes",
-      "Consistent heat level for reliable cooking results",
+    alt: "Teja Chilli - S17 - High heat dried chillies",
+    title: "Teja Chilli - S17 - Fiery Intensity",
+    description: "Experience the intense heat and vibrant red color of our Teja Chilli - S17. Perfect for adding a fiery kick to curries, sauces, and marinades, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
+    features: [
+      "High heat level (35,000-45,000 SHU)",
+      "Bright red color for visual appeal",
+      "Versatile for various cuisines",
+      "Organically grown without synthetic pesticides",
+      "Sun-dried to lock in natural flavors"
     ],
+    benefits: [
+      "Enhances metabolism with capsaicin",
+      "Rich in vitamins A and C for immune support",
+      "Adds depth and heat to dishes",
+      "Supports sustainable farming practices"
+    ],
+    specifications: [
+      "Length: 6-8 cm",
+      "Moisture: 10-12%",
+      "Color: Bright Red",
+      "Heat Level: High"
+    ],
+    details: {
+      origin: "Guntur, Andhra Pradesh, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 280,
+      "5kg": 1300,
+      "25kg": 6000
+    }
   },
   {
     id: 3,
@@ -78,35 +85,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "byadgi-red-chilli",
     image: "/images/chilli/byadgi.jpg",
-    description: "Premium BYADGI Dry Red Chilli from Pramoda Exim Corporation. Renowned for its wrinkled appearance, deep red color and exceptional color extraction properties.",
-    featured: true,
-    details: {
-      productName: "BYADGI/668",
-      style: "Dried",
-      flavour: "Medium",
-      color: "Deep Red",
-      pungencyInSHU: "15000-25000 (Heat)",
-      colourInASTA: "70-90 max",
-      length: "5-7 cm",
-      breath: "1.0-1.5cm",
-      skin: "Wrinkled",
-      capsaicinContent: "0.2-0.3% max",
-      podsWithStalks: "2% maximum",
-      brokenChilies: "2% maximum",
-      looseSeeds: "2% maximum",
-      damagedPods: "1% maximum",
-      foreignMaterial: "1% maximum",
-      moisture: "12% maximum",
-      quality: "A/C Best",
-      origin: "Karnataka, India",
-      packingDetails: "5,10,15,20 kg Cartoon/Jute/pp",
-    },
-    benefits: [
-      "Renowned for excellent color extraction in dishes",
-      "Lower heat level with rich flavor profile",
-      "Perfect for traditional South Indian cuisine",
-      "High color value makes it ideal for colorful dishes",
+    alt: "BYADGI Dry Red Chilli - Rich color and mild heat",
+    title: "BYADGI Dry Red Chilli - Rich Colorful Essence",
+    description: "Known for its deep red hue and mild heat, our BYADGI Dry Red Chilli is ideal for adding rich color and subtle spice to dishes like tandoori, biryani, and sauces. Sourced from sustainable farms for authentic flavor.",
+    features: [
+      "Mild to medium heat (15,000-25,000 SHU)",
+      "Deep red color for vibrant dishes",
+      "Perfect for Indian cuisine",
+      "Grown using organic methods",
+      "Carefully dried to retain natural oils"
     ],
+    benefits: [
+      "Enhances dish aesthetics with vivid color",
+      "Provides mild heat for balanced flavors",
+      "Supports immune health with antioxidants",
+      "Promotes sustainable agriculture"
+    ],
+    specifications: [
+      "Length: 8-10 cm",
+      "Moisture: 10-12%",
+      "Color: Deep Red",
+      "Heat Level: Mild-Medium"
+    ],
+    details: {
+      origin: "Karnataka, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 220,
+      "5kg": 1000,
+      "25kg": 4500
+    }
   },
   {
     id: 4,
@@ -114,35 +125,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "wrinkled-273-red-chilli-with-stem",
     image: "/images/chilli/wrinkled-273.jpg",
-    description: "Wrinkled 273 red chilli variety with stem, featuring distinctive wrinkled surface and bright red color. Perfect for adding rich flavor and appealing color to various dishes.",
-    featured: false,
-    details: {
-      productName: "Wrinkled 273",
-      style: "Dried",
-      flavour: "Medium to Hot",
-      color: "Deep Red",
-      pungencyInSHU: "30000-40000 (Heat)",
-      colourInASTA: "50-70 max",
-      length: "4-6 cm",
-      breath: "1.0-1.2cm",
-      skin: "Wrinkled",
-      capsaicinContent: "0.3-0.4% max",
-      podsWithStalks: "100% (with stalks)",
-      brokenChilies: "2% maximum",
-      looseSeeds: "2% maximum",
-      damagedPods: "1% maximum",
-      foreignMaterial: "1% maximum",
-      moisture: "14% maximum",
-      quality: "A/C Best",
-      origin: "Guntur, Andhra Pradesh, India",
-      packingDetails: "5,10,15,20,25 & 40 kg Cartoon/Jute/pp",
-    },
-    benefits: [
-      "Distinctive wrinkled appearance with rich flavor",
-      "Balanced heat level suitable for various dishes",
-      "Good color retention in cooking",
-      "Perfect for sauces and powder preparations",
+    alt: "Wrinkled 273 Red Chilli With Stem - Unique wrinkled surface",
+    title: "Wrinkled 273 Red Chilli With Stem - Distinctive Flavor",
+    description: "Our Wrinkled 273 Red Chilli With Stem features a unique wrinkled surface and bright red color. Perfect for adding rich flavor and appealing color to various dishes, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
+    features: [
+      "Medium to hot heat level (30,000-40,000 SHU)",
+      "Unique wrinkled surface for distinct use",
+      "Perfect for spicy condiments",
+      "Organically grown for quality",
+      "Dried to preserve intense heat"
     ],
+    benefits: [
+      "Delivers bold spice for adventurous palates",
+      "Enhances traditional recipes",
+      "Supports wellness with natural compounds",
+      "Promotes sustainable agriculture"
+    ],
+    specifications: [
+      "Length: 4-6 cm",
+      "Moisture: 10-12%",
+      "Color: Bright Red",
+      "Heat Level: Medium-Hot"
+    ],
+    details: {
+      origin: "Guntur, Andhra Pradesh, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 260,
+      "5kg": 1200,
+      "25kg": 5200
+    }
   },
   {
     id: 5,
@@ -150,35 +165,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "endo-5-red-chilli",
     image: "/images/chilli/endo-5.jpg",
-    description: "Premium Indian Red Chilli ENDO 5 variety featuring medium-length pods with stems. Known for its consistent quality and versatile applications in various cuisines.",
-    featured: false,
-    details: {
-      productName: "ENDO 5",
-      style: "Dried",
-      flavour: "Medium",
-      color: "Bright Red",
-      pungencyInSHU: "20000-30000 (Heat)",
-      colourInASTA: "40-60 max",
-      length: "5-7 cm",
-      breath: "1.0-1.3cm",
-      skin: "Medium",
-      capsaicinContent: "0.2-0.3% max",
-      podsWithStalks: "2% maximum",
-      brokenChilies: "2% maximum",
-      looseSeeds: "2% maximum",
-      damagedPods: "1% maximum",
-      foreignMaterial: "1% maximum",
-      moisture: "14% maximum",
-      quality: "A/C Best",
-      origin: "Andhra Pradesh, India",
-      packingDetails: "5,10,15,20,25 & 40 kg Cartoon/Jute/pp",
-    },
-    benefits: [
-      "Versatile application in various cuisines",
-      "Balanced heat and flavor profile",
-      "Consistent quality for commercial use",
-      "Good shelf stability and retention of properties",
+    alt: "Indian Red Chilli ENDO 5 - Medium heat dried chillies",
+    title: "Indian Red Chilli ENDO 5 - Balanced Flavor",
+    description: "Experience the balanced heat and flavor of our Indian Red Chilli ENDO 5. Perfect for adding a medium kick to curries, sauces, and marinades, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
+    features: [
+      "Medium heat level (20,000-30,000 SHU)",
+      "Bright red color for visual appeal",
+      "Versatile for various cuisines",
+      "Organically grown without synthetic pesticides",
+      "Sun-dried to lock in natural flavors"
     ],
+    benefits: [
+      "Enhances metabolism with capsaicin",
+      "Rich in vitamins A and C for immune support",
+      "Adds depth and heat to dishes",
+      "Supports sustainable farming practices"
+    ],
+    specifications: [
+      "Length: 5-7 cm",
+      "Moisture: 10-12%",
+      "Color: Bright Red",
+      "Heat Level: Medium"
+    ],
+    details: {
+      origin: "Andhra Pradesh, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 240,
+      "5kg": 1100,
+      "25kg": 4800
+    }
   },
   {
     id: 6,
@@ -186,33 +205,38 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "fresh-red-chilli",
     image: "/images/chilli/fresh-red-chilli.jpg",
-    description: "Premium quality fresh red chilli with vibrant color and juicy texture for immediate culinary use. Features bright red color and glossy skin.",
-    featured: true,
-    details: {
-      productName: "Fresh Red Chilli",
-      style: "Fresh",
-      flavour: "Hot",
-      color: "Vibrant Red",
-      pungencyInSHU: "30000-50000 (Heat)",
-      length: "5-8 cm",
-      breath: "1.0-1.5cm",
-      skin: "Smooth and Glossy",
-      capsaicinContent: "0.3-0.5% max",
-      podsWithStalks: "100% (with stalks)",
-      damagedPods: "1% maximum",
-      foreignMaterial: "0.5% maximum",
-      moisture: "80-85%",
-      quality: "Export Grade",
-      origin: "Selected growing regions in India",
-      packingDetails: "5,10 kg ventilated boxes",
-      shelfLife: "7-10 days when refrigerated",
-    },
+    alt: "Fresh Red Chilli - Fresh and juicy",
+    title: "Fresh Red Chilli - Fresh Flavor",
+    description: "Our Fresh Red Chilli is perfect for adding a burst of fresh flavor to your dishes. With its vibrant color and juicy texture, it's ideal for immediate culinary use.",
+    features: [
+      "High heat level (30,000-50,000 SHU)",
+      "Fresh and juicy texture",
+      "Perfect for fresh preparations",
+      "Grown using organic methods",
+      "Carefully hand-picked for quality"
+    ],
     benefits: [
       "Maximum freshness and vibrant flavor",
-      "Higher vitamin C content than dried chilies",
+      "Higher vitamin C content than dried chillies",
       "Juicy texture perfect for fresh preparations",
-      "Vibrant color for garnishing and fresh salsas",
+      "Vibrant color for garnishing and fresh salsas"
     ],
+    specifications: [
+      "Length: 5-8 cm",
+      "Moisture: 80-85%",
+      "Color: Vibrant Red",
+      "Heat Level: High"
+    ],
+    details: {
+      origin: "Selected growing regions in India",
+      packagingOptions: "5kg, 10kg",
+      shelfLife: "7-10 days when refrigerated",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "5kg": 500,
+      "10kg": 900
+    }
   },
   {
     id: 7,
@@ -220,35 +244,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "wrinkled-273-red-chilli-without-stem",
     image: "/images/chilli/wrinkled-273-stemless.jpg",
-    description: "Wrinkled 273 red chilli variety without stems, featuring distinctive wrinkled surface and bright red color. Ideal for processing and applications where stems are not desired.",
-    featured: false,
-    details: {
-      productName: "Wrinkled 273 Stemless",
-      style: "Dried",
-      flavour: "Medium to Hot",
-      color: "Deep Red",
-      pungencyInSHU: "30000-40000 (Heat)",
-      colourInASTA: "50-70 max",
-      length: "4-6 cm",
-      breath: "1.0-1.2cm",
-      skin: "Wrinkled",
-      capsaicinContent: "0.3-0.4% max",
-      podsWithStalks: "0% (stemless)",
-      brokenChilies: "2% maximum",
-      looseSeeds: "2% maximum",
-      damagedPods: "1% maximum",
-      foreignMaterial: "1% maximum",
-      moisture: "14% maximum",
-      quality: "A/C Best",
-      origin: "Guntur, Andhra Pradesh, India",
-      packingDetails: "5,10,15,20,25 & 40 kg Cartoon/Jute/pp",
-    },
-    benefits: [
-      "Ready for immediate processing without stem removal",
-      "Ideal for powder and flake production",
-      "Same rich flavor as stemmed variety",
-      "Cost-effective for industrial applications",
+    alt: "Wrinkled 273 Red Chilli Without Stem - Unique wrinkled surface",
+    title: "Wrinkled 273 Red Chilli Without Stem - Distinctive Flavor",
+    description: "Our Wrinkled 273 Red Chilli Without Stem features a unique wrinkled surface and bright red color. Perfect for adding rich flavor and appealing color to various dishes, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
+    features: [
+      "Medium to hot heat level (30,000-40,000 SHU)",
+      "Unique wrinkled surface for distinct use",
+      "Perfect for spicy condiments",
+      "Organically grown for quality",
+      "Dried to preserve intense heat"
     ],
+    benefits: [
+      "Delivers bold spice for adventurous palates",
+      "Enhances traditional recipes",
+      "Supports wellness with natural compounds",
+      "Promotes sustainable agriculture"
+    ],
+    specifications: [
+      "Length: 4-6 cm",
+      "Moisture: 10-12%",
+      "Color: Bright Red",
+      "Heat Level: Medium-Hot"
+    ],
+    details: {
+      origin: "Guntur, Andhra Pradesh, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 260,
+      "5kg": 1200,
+      "25kg": 5200
+    }
   },
   {
     id: 8,
@@ -256,35 +284,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "gadag-byadagi-red-chilli",
     image: "/images/chilli/gadag-byadagi.jpg",
-    description: "Premium Gadag Byadagi Red Chilli from Karnataka, featuring the distinctive Byadagi variety grown in the Gadag region. Known for superior color and mild pungency.",
-    featured: true,
-    details: {
-      productName: "Gadag Byadagi",
-      style: "Dried",
-      flavour: "Mild to Medium",
-      color: "Vibrant Deep Red",
-      pungencyInSHU: "12000-20000 (Heat)",
-      colourInASTA: "80-100 max",
-      length: "5-7 cm",
-      breath: "1.0-1.5cm",
-      skin: "Wrinkled",
-      capsaicinContent: "0.15-0.25% max",
-      podsWithStalks: "2% maximum",
-      brokenChilies: "2% maximum",
-      looseSeeds: "2% maximum",
-      damagedPods: "1% maximum",
-      foreignMaterial: "1% maximum",
-      moisture: "12% maximum",
-      quality: "Premium",
-      origin: "Gadag, Karnataka, India",
-      packingDetails: "5,10,15,20 kg Cartoon/Jute/pp",
-    },
-    benefits: [
-      "Exceptional color extraction for vibrant dishes",
-      "Region-specific flavor profile from Gadag terroir",
-      "Lower heat allows full flavor appreciation",
-      "Ideal for authentic Karnataka cuisine",
+    alt: "Gadag Byadagi Red Chilli - Rich color and mild heat",
+    title: "Gadag Byadagi Red Chilli - Rich Colorful Essence",
+    description: "Known for its deep red hue and mild heat, our Gadag Byadagi Red Chilli is ideal for adding rich color and subtle spice to dishes like tandoori, biryani, and sauces. Sourced from sustainable farms for authentic flavor.",
+    features: [
+      "Mild to medium heat (12,000-20,000 SHU)",
+      "Deep red color for vibrant dishes",
+      "Perfect for Indian cuisine",
+      "Grown using organic methods",
+      "Carefully dried to retain natural oils"
     ],
+    benefits: [
+      "Enhances dish aesthetics with vivid color",
+      "Provides mild heat for balanced flavors",
+      "Supports immune health with antioxidants",
+      "Promotes sustainable agriculture"
+    ],
+    specifications: [
+      "Length: 8-10 cm",
+      "Moisture: 10-12%",
+      "Color: Deep Red",
+      "Heat Level: Mild-Medium"
+    ],
+    details: {
+      origin: "Gadag, Karnataka, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 220,
+      "5kg": 1000,
+      "25kg": 4500
+    }
   },
   {
     id: 9,
@@ -292,29 +324,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "red-chilli-powder",
     image: "/images/chilli/chilli-powder.jpg",
-    description: "Premium Red Chilli Powder ground from selected dried red chilies. Features vibrant color, consistent heat level, and fine texture for easy blending in various dishes.",
-    featured: true,
-    details: {
-      productName: "Red Chilli Powder",
-      style: "Powder",
-      flavour: "Medium to Hot",
-      color: "Bright Red",
-      pungencyInSHU: "30000-40000 (Heat)",
-      colourInASTA: "60-80 max",
-      meshSize: "60-80 mesh",
-      capsaicinContent: "0.3-0.4%",
-      moisture: "10% maximum",
-      quality: "Premium",
-      origin: "Selected growing regions in India",
-      packingDetails: "100g, 250g, 500g, 1kg pouches/boxes",
-      shelfLife: "12 months when stored properly",
-    },
-    benefits: [
-      "Instant flavor addition to any dish",
-      "Consistent heat level for reliable cooking",
-      "Fine texture blends seamlessly into recipes",
-      "Vibrant color enhances dish presentation",
+    alt: "Premium Red Chilli Powder - Pure ground spice",
+    title: "Premium Red Chilli Powder - Pure Spicy Essence",
+    description: "Enhance your dishes with our pure Premium Red Chilli Powder, ground from the finest sustainably sourced chillies. Perfect for adding heat and color to curries, soups, and rubs with ease.",
+    features: [
+      "Consistent heat level (20,000-50,000 SHU)",
+      "Fine grind for easy blending",
+      "Versatile for all cooking styles",
+      "Made from organically grown chillies",
+      "Packed to retain freshness"
     ],
+    benefits: [
+      "Convenient way to add spice",
+      "Boosts flavor profiles instantly",
+      "Supports health with capsaicin benefits",
+      "Sourced sustainably for eco-consciousness"
+    ],
+    specifications: [
+      "Texture: Fine Powder",
+      "Moisture: Below 10%",
+      "Color: Vibrant Red",
+      "Heat Level: Medium-High"
+    ],
+    details: {
+      origin: "Mixed Indian Regions",
+      packagingOptions: "500g, 1kg, 5kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "500g": 130,
+      "1kg": 240,
+      "5kg": 1100
+    }
   },
   {
     id: 10,
@@ -322,29 +364,39 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "red-chilli-flakes",
     image: "/images/chilli/chilli-flakes.jpg",
-    description: "Premium Red Chilli Flakes prepared from crushed dried red chilies. Features vibrant color and texture that adds visual appeal and distinct heat bursts to various dishes.",
-    featured: false,
-    details: {
-      productName: "Red Chilli Flakes",
-      style: "Crushed Flakes",
-      flavour: "Medium to Hot",
-      color: "Vibrant Red",
-      pungencyInSHU: "30000-45000 (Heat)",
-      colourInASTA: "60-80 max",
-      flakeSize: "2-4mm",
-      capsaicinContent: "0.3-0.4%",
-      moisture: "10% maximum",
-      quality: "Premium",
-      origin: "Selected growing regions in India",
-      packingDetails: "100g, 250g, 500g pouches/bottles",
-      shelfLife: "12 months when stored properly",
-    },
+    alt: "Red Chilli Flakes - Crushed flakes for added texture",
+    title: "Red Chilli Flakes - Fiery Texture",
+    description: "Add a burst of flavor and texture with our Red Chilli Flakes, crushed from the finest sustainably sourced chillies. Perfect for adding heat and visual appeal to pizzas, pastas, and garnishing.",
+    features: [
+      "Medium to hot heat level (30,000-45,000 SHU)",
+      "Crushed flakes for added texture",
+      "Perfect for Italian and Mexican cuisine",
+      "Made from organically grown chillies",
+      "Packed to retain freshness"
+    ],
     benefits: [
       "Adds texture and visual appeal to dishes",
       "Concentrated bursts of flavor and heat",
       "Perfect for pizzas, pastas, and garnishing",
-      "Consistent quality for commercial and home use",
+      "Consistent quality for commercial and home use"
     ],
+    specifications: [
+      "Flake Size: 2-4mm",
+      "Moisture: Below 10%",
+      "Color: Vibrant Red",
+      "Heat Level: Medium-Hot"
+    ],
+    details: {
+      origin: "Mixed Indian Regions",
+      packagingOptions: "100g, 250g, 500g",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "100g": 100,
+      "250g": 220,
+      "500g": 400
+    }
   },
   {
     id: 11,
@@ -352,27 +404,38 @@ export const redChilliProducts = [
     category: "red-chilli",
     slug: "red-chilli-seeds",
     image: "/images/chilli/chilli-seeds.jpg",
-    description: "Premium Red Chilli Seeds extracted from dried red chilies. Features balanced heat level and rich flavor, ideal for various culinary applications including spice blends and oils.",
-    featured: false,
-    details: {
-      productName: "Red Chilli Seeds",
-      style: "Seeds",
-      flavour: "Hot",
-      color: "Red to Dark Red",
-      pungencyInSHU: "40000-50000 (Heat)",
-      capsaicinContent: "0.4-0.5%",
-      purity: "98% minimum",
-      moisture: "10% maximum",
-      quality: "Premium",
-      origin: "Selected growing regions in India",
-      packingDetails: "100g, 250g, 500g pouches/containers",
-      shelfLife: "12 months when stored properly",
-    },
+    alt: "Red Chilli Seeds - Concentrated source of capsaicin",
+    title: "Red Chilli Seeds - Intense Flavor",
+    description: "Our Red Chilli Seeds are a concentrated source of capsaicin and heat, perfect for adding intense flavor to your dishes. Sustainably sourced from organic farms for authentic flavor.",
+    features: [
+      "High heat level (40,000-50,000 SHU)",
+      "Concentrated source of capsaicin",
+      "Perfect for chilli oil and specialized applications",
+      "Made from organically grown chillies",
+      "Packed to retain freshness"
+    ],
     benefits: [
       "Concentrated source of capsaicin and heat",
       "Ideal for chilli oil and specialized applications",
       "Long shelf life and consistent potency",
-      "Can be ground for unique spice blends",
+      "Can be ground for unique spice blends"
     ],
-  },
+    specifications: [
+      "Purity: 98% minimum",
+      "Moisture: Below 10%",
+      "Color: Red to Dark Red",
+      "Heat Level: High"
+    ],
+    details: {
+      origin: "Mixed Indian Regions",
+      packagingOptions: "100g, 250g, 500g",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "100g": 120,
+      "250g": 280,
+      "500g": 500
+    }
+  }
 ]

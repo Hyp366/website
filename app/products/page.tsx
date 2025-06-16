@@ -7,7 +7,7 @@ import { Suspense } from "react"
 export const metadata: Metadata = {
   title: "Products | Hearty You Products India Pvt Ltd",
   description:
-    "Explore our premium Red Chilli, Millets, Spices, Herbal & Fruit Powders, and Indian Pulses. High-quality, organic, and sustainably sourced ingredients for your kitchen and wellness.",
+    "Explore our extensive range of premium Red Chilli, Millets, Spices, Herbal & Fruit Powders, and Indian Pulses at Hearty You Products. Each product is organically grown, sustainably sourced, and crafted to elevate your kitchen and wellness routines with authentic flavors and nutrients.",
   keywords: "red chilli products, organic millets, natural spices, herbal powders, fruit powders, indian pulses, toor dal, masoor dal, moong dal, Hearty You Products catalog",
 }
 

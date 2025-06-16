@@ -38,7 +38,7 @@ export default function Home() {
               </p>
               <p className="text-gray-700 mb-6">
                 We take pride in our rigorous quality control processes that ensure every product meets the highest
-                standards before reaching your kitchen.
+                standards before reaching you.
               </p>
               <Button asChild className="bg-red-600 hover:bg-red-700">
                 <Link href="/about">
@@ -68,7 +68,7 @@ export default function Home() {
           </p>
 
           <Suspense fallback={<div className="text-center py-8">Loading featured products...</div>}>
-            <ProductGrid featured={true} />
+            <ProductGrid featured={true} limit={5} />
           </Suspense>
 
           <div className="text-center mt-12">

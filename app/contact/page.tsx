@@ -6,7 +6,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react"
 export const metadata: Metadata = {
   title: "Contact Us | Hearty You Products India Pvt Ltd",
   description:
-    "Get in touch with Hearty You Products India Pvt Ltd. Contact us for inquiries about our Red Chilli, Millets, Spices, and Herbal & Fruit Powders products.",
+    "Reach out to Hearty You Products India Pvt Ltd for inquiries about our premium Red Chilli, Millets, Spices, and Herbal & Fruit Powders. We're here to assist with your needs for organic and sustainably sourced ingredients.",
   keywords: "contact Hearty You Products, red chilli supplier contact, organic food company India contact, herbal powders, fruit powders",
 }
 

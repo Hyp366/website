@@ -15,21 +15,21 @@ const EcosystemSection = () => {
       id: 1,
       title: "Supplier to Customer",
       icon: <ShoppingCart className="w-12 h-12 text-white" />,
-      description: "We source high-quality products from trusted suppliers and deliver them directly to customers, ensuring premium quality and competitive pricing.",
+      description: "Dive into the world of premium products with our curated selection of goods. From high-quality items to rich, unique products, each item is sourced from the finest suppliers to deliver unmatched quality and value to our customers.",
       bgImage: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?q=80&w=600&auto=format&fit=crop"
     },
     {
       id: 2,
       title: "Sustainable Practices",
       icon: <Leaf className="w-12 h-12 text-white" />,
-      description: "Our ecosystem promotes organic farming methods, water conservation, and biodiversity to ensure environmental sustainability.",
+      description: "Our ecosystem promotes organic farming methods, water conservation, and biodiversity to ensure environmental sustainability. We're committed to reducing our carbon footprint and promoting eco-friendly practices throughout our supply chain.",
       bgImage: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600&auto=format&fit=crop"
     },
     {
       id: 3,
       title: "Community Development",
       icon: <Users className="w-12 h-12 text-white" />,
-      description: "We invest in rural communities through education, infrastructure, and economic opportunities that empower local populations.",
+      description: "We invest in rural communities, infrastructure, and economic opportunities that empower local populations. Our goal is to create a positive impact on the lives of our suppliers, customers, and the environment.",
       bgImage: "https://images.unsplash.com/photo-1542601600647-3a722a90a76c?q=80&w=600&auto=format&fit=crop"
     }
   ]
