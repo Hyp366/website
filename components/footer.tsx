@@ -24,7 +24,7 @@ const Footer = () => {
               <span className="font-bold text-xl">Hearty You</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Premium quality Red Chilli, Millets, Spices, and Herbal & Fruit Powders for a healthier you. Sustainably sourced and naturally
+              Premium quality Dry Red Chilli, Millets, Spices, and Herbal & Fruit Powders for a healthier you. Sustainably sourced and naturally
               processed.
             </p>
             <div className="flex space-x-4">

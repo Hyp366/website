@@ -135,7 +135,7 @@ export default function ContactPage() {
               {
                 question: "What types of products do you offer?",
                 answer:
-                  "We offer a wide range of premium quality Red Chilli, Millets, Spices, Herbal & Fruit Powders, and Indian Pulses. All our products are carefully sourced and processed to maintain their natural properties and nutritional value.",
+                  "We offer a wide range of premium quality  Dry Red Chilli, Millets, Spices, Herbal & Fruit Powders, and Indian Pulses. All our products are carefully sourced and processed to maintain their natural properties and nutritional value.",
               },
             ].map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">

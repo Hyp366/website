@@ -384,7 +384,7 @@ function ProductDetailContent() {
                 Each variety is carefully selected and processed to ensure exceptional flavor, color, and quality.
               </>
             ) : (
-              'Explore our premium quality red chilli products sourced directly from the finest growing regions of India. Each variety is carefully selected and processed to ensure exceptional flavor, color, and quality.'
+              'Explore our premium quality  Dry red chilli products sourced directly from the finest growing regions of India. Each variety is carefully selected and processed to ensure exceptional flavor, color, and quality.'
             )}
           </p>
           

@@ -9,7 +9,7 @@ const slides = [
     id: 1,
     image: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?q=80&w=1920&auto=format&fit=crop",
     mobileImage: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?q=80&w=750&auto=format&fit=crop",
-    title: "Premium Quality Red Chilli",
+    title: " Dry Premium Quality Red Chilli",
     description: "Experience the fiery kick of our sustainably sourced and naturally processed red chillies, perfect for adding bold flavor to any dish.",
     buttonText: "Explore Red Chilli",
     buttonLink: "/products/red-chilli",
