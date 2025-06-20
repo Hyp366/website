@@ -33,7 +33,6 @@ const Header = () => {
         { name: "Indian Pulses", href: "/products/indian-pulses" },
       ],
     },
-    { name: "Infrastructure", href: "/infrastructure" },
     { name: "Contact", href: "/contact" },
   ]
 
@@ -83,7 +82,7 @@ const Header = () => {
                 />
               </div>
               <div className={cn("font-bold text-xl transition-colors", isScrolled ? "text-red-600" : "text-white")}>
-                Hearty You
+                Hearty You Products
               </div>
             </div>
           </Link>

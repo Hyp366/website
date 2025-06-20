@@ -8,8 +8,8 @@ import { ArrowRight } from "lucide-react"
 const categories = [
   {
     id: 1,
-    name: "Red Chilli",
-    description: "Premium quality red chilli with rich color and balanced heat",
+    name: " Dry Red Chilli",
+    description: "Premium quality  dry red chilli with rich color and balanced heat",
     image: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?q=80&w=800&auto=format&fit=crop",
     mobileImage: "https://images.unsplash.com/photo-1588252303782-cb80119abd6d?q=80&w=600&auto=format&fit=crop",
     link: "/products/red-chilli",

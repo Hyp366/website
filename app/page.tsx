@@ -32,7 +32,7 @@ export default function Home() {
             <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-6 text-red-600">About Hearty You Products</h2>
               <p className="text-gray-700 mb-6">
-                At Hearty You Products India Pvt Ltd, we are committed to bringing you the finest quality Red Chilli,
+                At Hearty You Products India Pvt Ltd, we are committed to bringing you the finest quality Dry Red Chilli,
                 Millets, and Spices sourced directly from farmers. Our products are natural, healthy, and sustainably
                 produced.
               </p>
@@ -81,69 +81,6 @@ export default function Home() {
 
       {/* Ayhro Company Ecosystem */}
       <EcosystemSection />
-
-      {/* Infrastructure */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-2 text-center text-red-600">Our Infrastructure</h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            State-of-the-art facilities ensuring quality at every step of production
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?q=80&w=1470&auto=format&fit=crop"
-                  alt="Processing Unit"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-red-600">Processing Unit</h3>
-              <p className="text-gray-600">
-                Modern processing facilities with advanced technology for optimal product quality.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?q=80&w=1472&auto=format&fit=crop"
-                  alt="Quality Control"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-red-600">Quality Control</h3>
-              <p className="text-gray-600">
-                Rigorous testing procedures to ensure every product meets our high standards.
-              </p>
-            </div>
-
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
-              <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
-                <Image 
-                  src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1470&auto=format&fit=crop" 
-                  alt="Packaging Unit" 
-                  fill 
-                  className="object-cover" 
-                />
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-red-600">Packaging Unit</h3>
-              <p className="text-gray-600">
-                Hygienic packaging facilities that preserve freshness and extend shelf life.
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Button asChild className="bg-red-600 hover:bg-red-700">
-              <Link href="/infrastructure">Explore Our Infrastructure</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-red-600 to-red-700 text-white">

@@ -88,10 +88,10 @@ const HeroSlider = () => {
         // Create a unique gradient for each slide based on its ID
         const gradientColors: Record<number, string> = {
           1: "from-red-900 via-red-700 to-red-500", // Red chilli
-          2: "from-amber-800 via-amber-600 to-amber-400", // Millets
+          2: "from-emerald-800 via-teal-500 to-emerald-300", // Millets (fresh green)
           3: "from-yellow-700 via-orange-600 to-yellow-500", // Spices
           4: "from-green-800 via-green-600 to-green-400", // Herbal & Fruit Powders
-          5: "from-orange-800 via-yellow-700 to-orange-500", // Indian Pulses
+          5: "from-purple-800 via-violet-600 to-purple-400", // Indian Pulses (vibrant purple)
         }
         
         return (

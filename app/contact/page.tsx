@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import ContactForm from "@/components/contact-form"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Contact Us | Hearty You Products India Pvt Ltd",
@@ -61,7 +61,7 @@ export default function ContactPage() {
                       <br />
                       #13068, Prestige Shantiniketan,
                       <br />
-                      Whitefield Hoodie Main Road,
+                      Whitefield Hoodi Main Road,
                       <br />
                       Bangalore 560048, India
                     </p>
@@ -87,23 +87,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
                     <p className="text-gray-600">
-                      n.manjusha18@gmail.com
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="bg-red-100 p-3 rounded-full mr-4">
-                    <Clock className="h-6 w-6 text-red-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-1">Business Hours</h3>
-                    <p className="text-gray-600">
-                      Monday - Friday: 9:00 AM - 6:00 PM
-                      <br />
-                      Saturday: 9:00 AM - 1:00 PM
-                      <br />
-                      Sunday: Closed
+                      heartyuproducts@gmail.com
                     </p>
                   </div>
                 </div>

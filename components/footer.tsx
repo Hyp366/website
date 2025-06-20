@@ -90,7 +90,7 @@ const Footer = () => {
                   <br />
                   #13068, Prestige Shantiniketan,
                   <br />
-                  Whitefield Hoodie Main Road,
+                  Whitefield Hoodi Main Road,
                   <br />
                   Bangalore 560048, India
                 </span>
@@ -109,10 +109,10 @@ const Footer = () => {
               <li className="flex">
                 <Mail className="h-5 w-5 text-red-500 mr-3 flex-shrink-0" />
                 <a 
-                  href="mailto:n.manjusha18@gmail.com" 
+                  href="mailto:heartyuproducts@gmail.com" 
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  n.manjusha18@gmail.com
+                  heartyuproducts@gmail.com
                 </a>
               </li>
             </ul>
@@ -143,6 +143,15 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   +1 (650) 888-6202
+                </a>
+              </li>
+              <li className="flex">
+                <Mail className="h-5 w-5 text-red-500 mr-3 flex-shrink-0" />
+                <a 
+                  href="mailto:happyuproducts@gmail.com" 
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  happyuproducts@gmail.com
                 </a>
               </li>
             </ul>

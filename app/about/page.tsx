@@ -90,6 +90,9 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <p>
+                  We procure the best Byadgi chillis from Karnataka to ensure the highest quality for our customers.
+                </p>
+                <p>
                   We, <span className="font-semibold">Hearty You Products India Pvt Ltd</span> operate directly from Guntur to provide the best of red chillies and their esteemed varieties to our clients across the world.
                 </p>
                 <p>
@@ -156,10 +159,9 @@ export default function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-center">Sustainability</h3>
+              <h3 className="text-xl font-bold mb-4 text-center">Natural and Organic</h3>
               <p className="text-gray-600 text-center">
-                We support sustainable farming practices and work closely with farmers to ensure environmental
-                responsibility. Our commitment to sustainability extends throughout our entire supply chain.
+                We are dedicated to offering products that are natural and organic, free from synthetic additives and chemicals. Our commitment ensures you receive food as nature intended—pure, healthy, and safe.
               </p>
             </div>
 
@@ -180,10 +182,9 @@ export default function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4 text-center">Community</h3>
+              <h3 className="text-xl font-bold mb-4 text-center">Competitive Pricing</h3>
               <p className="text-gray-600 text-center">
-                We believe in supporting local communities and creating positive impact through fair trade practices.
-                By empowering farmers and local communities, we create shared value for all stakeholders.
+                We believe in delivering exceptional value through competitive pricing. Our efficient sourcing and supply chain management allow us to offer premium products at prices that are accessible to all our customers.
               </p>
             </div>
           </div>

@@ -166,24 +166,43 @@ function ProductDetailContent() {
                   </TabsContent>
                   
                   <TabsContent value="specifications" className="p-4 bg-gray-50 rounded-md mt-2">
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead className="w-1/3">Specification</TableHead>
-                          <TableHead>Details</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {selectedProduct.details && Object.entries(selectedProduct.details).map(([key, value]: [string, unknown]) => (
-                          <TableRow key={key}>
-                            <TableCell className="font-medium">
-                              {key.replace(/([A-Z])/g, ' $1').replace(/^./, (str: string) => str.toUpperCase())}
-                            </TableCell>
-                            <TableCell>{String(value)}</TableCell>
+                    {selectedProduct.specTable ? (
+                      <Table>
+                        <TableHeader>
+                          <TableRow>
+                            <TableHead className="w-1/3">Specification</TableHead>
+                            <TableHead>Details</TableHead>
                           </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
+                        </TableHeader>
+                        <TableBody>
+                          {Object.entries(selectedProduct.specTable).map(([key, value]) => (
+                            <TableRow key={key}>
+                              <TableCell className="font-medium">{key}</TableCell>
+                              <TableCell>{String(value)}</TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    ) : (
+                      <Table>
+                        <TableHeader>
+                          <TableRow>
+                            <TableHead className="w-1/3">Specification</TableHead>
+                            <TableHead>Details</TableHead>
+                          </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                          {selectedProduct.details && Object.entries(selectedProduct.details).map(([key, value]) => (
+                            <TableRow key={key}>
+                              <TableCell className="font-medium">
+                                {key.replace(/([A-Z])/g, ' $1').replace(/^./, (str) => str.toUpperCase())}
+                              </TableCell>
+                              <TableCell>{String(value)}</TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                    )}
                   </TabsContent>
                   
                   <TabsContent value="benefits" className="p-4 bg-gray-50 rounded-md mt-2">
@@ -354,7 +373,7 @@ function ProductDetailContent() {
                 Red Chilli Products
               </>
             ) : (
-              'Red Chilli Products'
+              ' Dry Red Chilli Products'
             )}
           </h1>
           <p className="text-gray-600 mb-8 max-w-3xl">
