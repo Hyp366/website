@@ -21,30 +21,13 @@ const Footer = () => {
                   className="object-contain"
                 />
               </div>
-              <span className="font-bold text-xl">Hearty You</span>
+              <span className="font-bold text-xl">Hearty You Products India Pvt Ltd </span>
             </div>
             <p className="text-gray-400 mb-6">
               Premium quality Dry Red Chilli, Millets, Spices, and Herbal & Fruit Powders for a healthier you. Sustainably sourced and naturally
               processed.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
-            </div>
+            
           </div>
 
           {/* Quick Links */}
@@ -67,9 +50,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/infrastructure" className="text-gray-400 hover:text-white transition-colors">
-                  Infrastructure
-                </Link>
+                
               </li>
               <li>
                 <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">

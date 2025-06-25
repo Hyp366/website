@@ -7,6 +7,7 @@ import EcosystemSection from "@/components/ecosystem-section"
 import HeroSlider from "@/components/hero-slider"
 import FeaturedCategories from "@/components/featured-categories"
 import { Suspense } from "react"
+import CertificationsBar from "@/components/certifications-bar"
 
 export default function Home() {
   return (
@@ -58,27 +59,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-2 text-center text-red-600">Our Featured Products</h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Discover our premium selection of Red Chilli, Millets, and Spices that add flavor and nutrition to your
-            meals
-          </p>
-
-          <Suspense fallback={<div className="text-center py-8">Loading featured products...</div>}>
-            <ProductGrid featured={true} limit={5} />
-          </Suspense>
-
-          <div className="text-center mt-12">
-            <Button asChild className="bg-red-600 hover:bg-red-700">
-              <Link href="/products">View All Products</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Ayhro Company Ecosystem */}
       <EcosystemSection />
 
@@ -104,6 +84,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Certifications Bar */}
+      <CertificationsBar />
     </div>
   )
 }

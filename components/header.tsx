@@ -21,7 +21,7 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
+    { name: "About Us", href: "/about" },
     {
       name: "Products",
       href: "/products",
@@ -33,7 +33,7 @@ const Header = () => {
         { name: "Indian Pulses", href: "/products/indian-pulses" },
       ],
     },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact Us", href: "/contact" },
   ]
 
   useEffect(() => {
@@ -82,7 +82,7 @@ const Header = () => {
                 />
               </div>
               <div className={cn("font-bold text-xl transition-colors", isScrolled ? "text-red-600" : "text-white")}>
-                Hearty You Products
+                Hearty You Products India Pvt Ltd
               </div>
             </div>
           </Link>
@@ -121,31 +121,73 @@ const Header = () => {
                               <div className="ml-2">
                                 <ChevronRight className="h-4 w-4 text-gray-500" />
                               </div>
-                              <div className="absolute left-full top-0 w-48 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                              <div className="absolute left-full top-0 w-64 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                                 <div className="py-1">
-                                  <Link href="/products/red-chilli?variety=byadgi" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
+                                  {/* Byadgi Chillies */}
+                                  <Link href="/products/red-chilli?category=byadgi" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
                                     Byadgi Chillies
                                     <ChevronRight className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
-                                    <div className="absolute left-full top-0 w-48 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                                    <div className="absolute left-full top-0 w-64 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
                                       <div className="py-1">
-                                        <Link href="/products/red-chilli?variety=byadgi-2043-syngenta" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">2043 Syngenta</Link>
-                                        <Link href="/products/red-chilli?variety=byadgi-kaddi-kdl" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Byadgi Kaddi (KDL)</Link>
-                                        <Link href="/products/red-chilli?variety=byadgi-355" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Byadgi-355</Link>
-                                      </div>
-                                    </div>
-                                  </Link>
-                                  <Link href="/products/red-chilli?variety=guntur" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
-                                    Guntur Chillies
-                                    <ChevronRight className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
-                                    <div className="absolute left-full top-0 w-48 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
-                                      <div className="py-1">
-                                        <Link href="/products/red-chilli?variety=guntur-teja-s17" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Teja S17</Link>
-                                        <Link href="/products/red-chilli?variety=guntur-334-s4" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">334 S4</Link>
-                                        <Link href="/products/red-chilli?variety=guntur-sannam-s10" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Sannam S10</Link>
+                                        <Link href="/products/red-chilli?product=byadgi-dry-red-chilli" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">BYADGI Dry Red Chilli</Link>
+                                        <Link href="/products/red-chilli?product=byadgi-chilli-powder" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Byadgi Chilli Powder</Link>
+                                        <Link href="/products/red-chilli?product=gadag-byadagi-red-chilli" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Gadag Byadagi Red Chilli</Link>
                                       </div>
                                     </div>
                                   </Link>
 
+                                  {/* Guntur Chillies */}
+                                  <Link href="/products/red-chilli?category=guntur" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
+                                    Guntur Chillies
+                                    <ChevronRight className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
+                                    <div className="absolute left-full top-0 w-64 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                                      <div className="py-1">
+                                        <Link href="/products/red-chilli?product=334-s4-sannam-s10-red-chilli" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">334/S4/SANNAM/S10 Red Chilli</Link>
+                                        <Link href="/products/red-chilli?product=teja-chilli-s17" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Teja Chilli - S17</Link>
+                                      </div>
+                                    </div>
+                                  </Link>
+
+                                  {/* Wrinkled Varieties */}
+                                  <Link href="/products/red-chilli?category=wrinkled" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
+                                    Wrinkled Varieties
+                                    <ChevronRight className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
+                                    <div className="absolute left-full top-0 w-64 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                                      <div className="py-1">
+                                        <Link href="/products/red-chilli?product=wrinkled-with-stem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">With Stem</Link>
+                                        <Link href="/products/red-chilli?product=wrinkled-without-stem" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Without Stem</Link>
+                                      </div>
+                                    </div>
+                                  </Link>
+
+                                  {/* Processed Products */}
+                                  <Link href="/products/red-chilli?category=processed" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
+                                    Processed Products
+                                    <ChevronRight className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
+                                    <div className="absolute left-full top-0 w-64 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                                      <div className="py-1">
+                                        <Link href="/products/red-chilli?product=premium-red-chilli-powder" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Premium Red Chilli Powder</Link>
+                                        <Link href="/products/red-chilli?product=red-chilli-flakes" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Red Chilli Flakes</Link>
+                                        <Link href="/products/red-chilli?product=red-chilli-seeds" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Red Chilli Seeds</Link>
+                                      </div>
+                                    </div>
+                                  </Link>
+
+                                  {/* Fresh Chillies */}
+                                  <Link href="/products/red-chilli?product=fresh-red-chilli" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">
+                                    Fresh Chillies
+                                  </Link>
+
+                                  {/* Other Varieties */}
+                                  <Link href="/products/red-chilli?category=other" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600 group relative">
+                                    Other Varieties
+                                    <ChevronRight className="absolute right-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-500" />
+                                    <div className="absolute left-full top-0 w-64 origin-top-left bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                                      <div className="py-1">
+                                        <Link href="/products/red-chilli?product=indian-red-chilli-endo-5" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-red-600">Indian Red Chilli ENDO 5</Link>
+                                      </div>
+                                    </div>
+                                  </Link>
                                 </div>
                               </div>
                             </div>

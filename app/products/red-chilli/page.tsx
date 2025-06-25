@@ -120,11 +120,11 @@ function ProductDetailContent() {
                   className="object-cover"
                   priority
                 />
-                {selectedProduct.featured && (
+                {(selectedProduct as any).featured ? (
                   <div className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
                     Featured
                   </div>
-                )}
+                ) : null}
               </div>
 
               {/* Product Info */}
@@ -132,38 +132,13 @@ function ProductDetailContent() {
                 <h1 className="text-3xl md:text-4xl font-bold mb-4 text-red-600">{selectedProduct.name}</h1>
                 <p className="text-gray-700 text-lg mb-8">{selectedProduct.description}</p>
 
-                <Tabs defaultValue="features" className="mb-8">
+                <Tabs defaultValue="specifications" className="mb-8">
                   <TabsList className="grid grid-cols-4 w-full">
-                    <TabsTrigger value="features">Features</TabsTrigger>
                     <TabsTrigger value="specifications">Specifications</TabsTrigger>
+                    <TabsTrigger value="features">Features</TabsTrigger>
                     <TabsTrigger value="benefits">Benefits</TabsTrigger>
                     <TabsTrigger value="pricing">Pricing & Packages</TabsTrigger>
                   </TabsList>
-                  
-                  <TabsContent value="features" className="p-4 bg-gray-50 rounded-md mt-2">
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                        <span>Premium quality product from Hearty You</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                        <span>Authentic flavor and rich color</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                        <span>Sustainably sourced from trusted farmers</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                        <span>Rigorous quality control processes</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
-                        <span>Available in various packaging options</span>
-                      </li>
-                    </ul>
-                  </TabsContent>
                   
                   <TabsContent value="specifications" className="p-4 bg-gray-50 rounded-md mt-2">
                     {selectedProduct.specTable ? (
@@ -203,6 +178,31 @@ function ProductDetailContent() {
                         </TableBody>
                       </Table>
                     )}
+                  </TabsContent>
+                  
+                  <TabsContent value="features" className="p-4 bg-gray-50 rounded-md mt-2">
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
+                        <span>Premium quality product from Hearty You</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
+                        <span>Authentic flavor and rich color</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
+                        <span>Sustainably sourced from trusted farmers</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
+                        <span>Rigorous quality control processes</span>
+                      </li>
+                      <li className="flex items-start">
+                        <Check className="h-5 w-5 text-green-500 mr-2 mt-0.5" />
+                        <span>Available in various packaging options</span>
+                      </li>
+                    </ul>
                   </TabsContent>
                   
                   <TabsContent value="benefits" className="p-4 bg-gray-50 rounded-md mt-2">

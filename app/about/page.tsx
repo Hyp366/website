@@ -1,6 +1,7 @@
 import Image from "next/image"
 import type { Metadata } from "next"
 import { ChevronDown } from "lucide-react"
+import CertificationsBar from "@/components/certifications-bar"
 
 export const metadata: Metadata = {
   title: "About Us | Hearty You Products India Pvt Ltd",
@@ -95,7 +96,7 @@ export default function AboutPage() {
                 <p>
                   We, <span className="font-semibold">Hearty You Products India Pvt Ltd</span> operate directly from Guntur to provide the best of red chillies and their esteemed varieties to our clients across the world.
                 </p>
-                <p>
+                <p className="text-lg">
                   Karnataka is the largest producer of Ragi or Finger Millets and it stands second in the production of other various varieties of Millets. We operate from Karnataka and get you the best produce.
                 </p>
               </div>
@@ -104,7 +105,63 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Hearty You Products India Pvt Ltd Section */}
+      <section className="py-16 sm:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-red-600 inline-block relative">
+              Hearty You Products India Pvt Ltd
+              <span className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-red-600 rounded"></span>
+            </h2>
+            {/* <p className="text-gray-600 max-w-3xl mx-auto">Your trusted partner in food exports since 2007</p> */}
+          </div>
+          
+          <div className="max-w-4xl mx-auto space-y-8 text-gray-700 text-lg">
+            <p>
+               <span className="font-semibold">Hearty You Products India Pvt Ltd</span> has been at the forefront of delivering exceptional food services. Leveraging our extensive experience in the food industry, we have become a leading exporter of premium Indian Products to destinations across the globe.
+            </p>
+            
+            <p>
+              Our unwavering commitment to quality and customer satisfaction has forged strong partnerships with buyers in numerous countries, making us one of India's most trusted food-export companies.
+            </p>
 
+            <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-red-500">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">Our Fresh Produce</h3>
+              <p>
+                We take pride in our wide assortment of Fresh Products cultivated under controlled conditions using state-of-the-art technology and safe fertilizers. Our commitment to quality ensures that customers receive the finest produce at competitive market prices.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">Our Dedicated Team</h3>
+              <p className="mb-4">Our strength lies in our team of experts who ensure excellence at every step:</p>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <li className="flex items-center">
+                  <span className="text-red-500 mr-2">→</span> Procuring experts
+                </li>
+                <li className="flex items-center">
+                  <span className="text-red-500 mr-2">→</span> Quality controllers
+                </li>
+                <li className="flex items-center">
+                  <span className="text-red-500 mr-2">→</span> Packaging experts
+                </li>
+                <li className="flex items-center">
+                  <span className="text-red-500 mr-2">→</span> Skilled & unskilled labor
+                </li>
+                <li className="flex items-center">
+                  <span className="text-red-500 mr-2">→</span> Management professionals
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-8 p-6 bg-red-50 rounded-xl border-l-4 border-red-500">
+              <p className="text-center italic text-gray-700">
+                We appreciate your consideration and look forward to establishing a mutually beneficial business relationship. Thank you for your support as we work together towards productive cooperation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Quality Values */}
       <section className="py-16 sm:py-24 bg-white">
@@ -191,7 +248,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Removed Certifications Section */}
+      {/* Certifications Bar */}
+      <CertificationsBar />
 
       {/* Export Destinations Section */}
       <section className="py-16 sm:py-24 bg-gray-50">
@@ -206,7 +264,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {/* United States */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
               <div className="relative h-48 overflow-hidden">
@@ -215,7 +273,7 @@ export default function AboutPage() {
                   alt="United States"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 20vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 text-white">
@@ -237,7 +295,7 @@ export default function AboutPage() {
                   alt="United Kingdom"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 20vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 text-white">
@@ -251,19 +309,19 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Germany */}
+            {/* Australia */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1560969184-10fe8719e047?q=80&w=1920&auto=format&fit=crop"
-                  alt="Germany"
+                  src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=1920&auto=format&fit=crop"
+                  alt="Australia"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 20vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">Germany</h3>
+                  <h3 className="text-xl font-bold">Australia</h3>
                 </div>
               </div>
               <div className="p-4">
@@ -273,19 +331,19 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* France */}
+            {/* Canada */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1920&auto=format&fit=crop"
-                  alt="France"
+                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1920&auto=format&fit=crop"
+                  alt="Canada"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 20vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">France</h3>
+                  <h3 className="text-xl font-bold">Canada</h3>
                 </div>
               </div>
               <div className="p-4">
@@ -303,77 +361,11 @@ export default function AboutPage() {
                   alt="Spain"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 20vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 text-white">
                   <h3 className="text-xl font-bold">Spain</h3>
-                </div>
-              </div>
-              <div className="p-4">
-                <p className="text-sm text-gray-600">
-                  <span className="font-semibold">Products Exported:</span> Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses
-                </p>
-              </div>
-            </div>
-
-            {/* Sweden */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?q=80&w=1920&auto=format&fit=crop"
-                  alt="Sweden"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">Sweden</h3>
-                </div>
-              </div>
-              <div className="p-4">
-                <p className="text-sm text-gray-600">
-                  <span className="font-semibold">Products Exported:</span> Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses
-                </p>
-              </div>
-            </div>
-
-            {/* Belgium */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1491557345352-5929e343eb89?q=80&w=1920&auto=format&fit=crop"
-                  alt="Belgium"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">Belgium</h3>
-                </div>
-              </div>
-              <div className="p-4">
-                <p className="text-sm text-gray-600">
-                  <span className="font-semibold">Products Exported:</span> Red Chilli, Millets, Spices, Herbal & Fruit Powders, Indian Pulses
-                </p>
-              </div>
-            </div>
-
-            {/* UAE */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group">
-              <div className="relative h-48 overflow-hidden">
-                <Image
-                  src="https://images.unsplash.com/photo-1512632578888-169bbbc64f33?q=80&w=1920&auto=format&fit=crop"
-                  alt="UAE"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">UAE</h3>
                 </div>
               </div>
               <div className="p-4">
