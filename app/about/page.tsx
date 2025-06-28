@@ -113,23 +113,74 @@ export default function AboutPage() {
               Hearty You Products India Pvt Ltd
               <span className="absolute bottom-0 left-1/4 right-1/4 h-1 bg-red-600 rounded"></span>
             </h2>
-            {/* <p className="text-gray-600 max-w-3xl mx-auto">Your trusted partner in food exports since 2007</p> */}
+            {/* <p className="text-gray-600 max-w-3xl mx-auto">Your trusted partner in food exports since 2007</p>   */}
           </div>
           
           <div className="max-w-4xl mx-auto space-y-8 text-gray-700 text-lg">
-            <p>
-               <span className="font-semibold">Hearty You Products India Pvt Ltd</span> has been at the forefront of delivering exceptional food services. Leveraging our extensive experience in the food industry, we have become a leading exporter of premium Indian Products to destinations across the globe.
-            </p>
-            
-            <p>
-              Our unwavering commitment to quality and customer satisfaction has forged strong partnerships with buyers in numerous countries, making us one of India's most trusted food-export companies.
-            </p>
+            <div className="space-y-6">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold mb-4 text-red-600 flex items-center">
+                  <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
+                  About Hearty You Products India Pvt Ltd
+                </h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 mt-1">•</span>
+                    <span>Leading exporter of premium Indian agricultural products with a global presence</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 mt-1">•</span>
+                    <span>Trusted partner for quality food products in international markets</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-500 mr-2 mt-1">•</span>
+                    <span>Established track record of excellence in food exports since 2022</span>
+                  </li>
+                </ul>
+              </div>
 
-            <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-red-500">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">Our Fresh Produce</h3>
-              <p>
-                We take pride in our wide assortment of Fresh Products cultivated under controlled conditions using state-of-the-art technology and safe fertilizers. Our commitment to quality ensures that customers receive the finest produce at competitive market prices.
-              </p>
+              <div className="bg-gradient-to-r from-red-50 to-white p-6 rounded-xl border-l-4 border-red-500">
+                <h3 className="text-xl font-semibold mb-4 text-gray-800 flex items-center">
+                  <span className="w-2 h-2 bg-red-600 rounded-full mr-2"></span>
+                  Our Fresh Produce Highlights
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 className="font-medium text-gray-900 mb-2">Premium Quality Assurance</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start">
+                        <span className="text-red-500 mr-2">✓</span>
+                        <span>State-of-the-art cultivation and processing</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-red-500 mr-2">✓</span>
+                        <span>Rigorous quality control at every stage</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-red-500 mr-2">✓</span>
+                        <span>Competitive market pricing</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-gray-900 mb-2">Sustainable Practices</h4>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start">
+                        <span className="text-red-500 mr-2">✓</span>
+                        <span>Eco-friendly farming methods</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-red-500 mr-2">✓</span>
+                        <span>Safe and organic fertilizers</span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-red-500 mr-2">✓</span>
+                        <span>Responsible sourcing</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div>
@@ -365,7 +416,7 @@ export default function AboutPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-4 text-white">
-                  <h3 className="text-xl font-bold">Spain</h3>
+                  <h3 className="text-xl font-bold">Dubai</h3>
                 </div>
               </div>
               <div className="p-4">

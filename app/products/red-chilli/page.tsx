@@ -340,15 +340,15 @@ function ProductDetailContent() {
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1588252303782-cb80119abd6d?q=80&w=1920&auto=format&fit=crop"
-            alt="Red Chilli Products"
+            alt="Dry Red Chilli Products"
             fill
             className="object-cover brightness-50"
             priority
           />
         </div>
         <div className="container relative z-10 mx-auto px-4 text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Red Chilli Products</h1>
-          <p className="text-xl max-w-2xl">Premium quality, sustainably sourced Red Chilli varieties</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Dry Red Chilli Products</h1>
+          <p className="text-xl max-w-2xl">Premium quality, sustainably sourced Dry Red Chilli varieties</p>
         </div>
       </section>
 

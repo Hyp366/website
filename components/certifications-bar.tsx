@@ -3,7 +3,7 @@ import Image from "next/image"
 const certifications = [
   {
     name: "Spices Board India",
-    img: "https://imgs.search.brave.com/X77x36J7__K8yPfc7KBchmr_qfO7Lf1KeBU6icnffGg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/ZC9kZi9TcGljZXNf/Qm9hcmRfb2ZfSW5k/aWFfTG9nby5wbmcv/NTEycHgtU3BpY2Vz/X0JvYXJkX29mX0lu/ZGlhX0xvZ28ucG5n",
+    img: "https://imgs.search.brave.com/X77x36J7__K8yPfc7KBchmr_qfO7Lf1KeBU6icnffGg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvZW4vdGh1bWIv/ZC9kZi9TcGljZXNf/Qm9hcmRfb2ZfSW5k/aWFfTG9nby5wbmcv/NTEycHgtU3BpY2Vz/X0JvYXJkX29mX0lu/ZGlhX0xvZ28ucG5n",
   },
   {
     name: "APEDA",
@@ -16,6 +16,10 @@ const certifications = [
   {
     name: "FSSAI",
     img: "https://imgs.search.brave.com/8Bz-9k0kyF-D3pllWni1EfW8uadPJo7D2kOBaDBGI30/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mc3Nh/aS5nb3YuaW4vdXBs/b2FkL2tub3dsZWRn/ZV9odWIvMTExNzcw/NWI0MzM5ZmEzZTcy/MkZTU0FJLWxvZ28t/bWluK2xpbmUucG5n",
+  },
+  {
+    name: "MSME",
+    img: "https://msme.gov.in/sites/default/files/msme-logo.png",
   },
 ]
 

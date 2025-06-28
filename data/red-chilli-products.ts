@@ -4,7 +4,7 @@ export const redChilliProducts = [
     name: "334/S4/SANNAM/S10 Red Chilli",
     category: "red-chilli",
     slug: "334-s4-sannam-s10-red-chilli",
-    image: "https://imgs.search.brave.com/5L5J9eR8YXumFexg24g0MnesZIAh_asCbIH2w53dALQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zLmFsaWNkbi5jb20vQHNjMDQva2YvQWEzMTQ1MjZkN2Q4ZDQxMjY5NmRiYWI2MzI3ODMwNzhlWS5qcGdfMzAweDMwMC5qcGc",
+    image: "https://www.bstspices.com/assets/images/ps-s334-chilli-with-stem-8-1848x1125.png",
     alt: "334/S4/SANNAM/S10 Red Chilli - Premium quality dried red chillies",
     title: "334/S4/SANNAM/S10 Red Chilli - Rich Colorful Essence",
     description: "Experience the rich color and balanced heat of our 334/S4/SANNAM/S10 Red Chilli. Perfect for adding a vibrant kick to curries, sauces, and marinades, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
@@ -187,7 +187,7 @@ export const redChilliProducts = [
     name: "Byadgi Chilli Powder",
     category: "red-chilli",
     slug: "byadgi-chilli-powder",
-    image: "/images/chilli/byadgi-chilli-powder.jpg",
+    image: "https://i.ebayimg.com/images/g/gUsAAOSwpnxjTjGa/s-l500.jpg",
     alt: "Byadgi Chilli Powder - Premium ground spice",
     title: "Byadgi Chilli Powder - Mild, Vibrant Red Color",
     description: "Finely ground Byadgi Chilli Powder made from premium Byadgi chillies, renowned for their deep red color and mild pungency. Ideal for imparting vibrant color and subtle heat to curries, sauces, and spice blends. Carefully processed to retain natural oils and color, making it a favorite for food manufacturers and home cooks alike.",
@@ -248,7 +248,7 @@ export const redChilliProducts = [
     name: "Wrinkled 273 Red Chilli With Stem",
     category: "red-chilli",
     slug: "wrinkled-273-red-chilli-with-stem",
-    image: "/images/chilli/wrinkled-273.jpg",
+    image: "https://2.wlimg.com/product_images/bc-small/2022/10/10851230/watermark/273-dried-red-chilli-with-stem-1662536819-6527700.jpeg",
     alt: "Wrinkled 273 Red Chilli With Stem - Unique wrinkled surface",
     title: "Wrinkled 273 Red Chilli With Stem - Distinctive Flavor",
     description: "Our Wrinkled 273 Red Chilli With Stem features a unique wrinkled surface and bright red color. Perfect for adding rich flavor and appealing color to various dishes, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
@@ -309,7 +309,7 @@ export const redChilliProducts = [
     name: "Indian Red Chilli ENDO 5",
     category: "red-chilli",
     slug: "endo-5-red-chilli",
-    image: "/images/chilli/endo-5.jpg",
+    image: "https://imgs.search.brave.com/YuPVqRdRjokqiSVdnahj9-12sYKeRplCF3Q4CF3NVi4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly8yLnds/aW1nLmNvbS9wcm9k/dWN0X2ltYWdlcy9i/Yy1mdWxsL2Rpcl8x/NS80MjA5NjgvZW5k/by01LWRyeS1yZWQt/Y2hpbGxpLTE1ODA4/MDAuanBn",
     alt: "Indian Red Chilli ENDO 5 - Medium heat dried chillies",
     title: "Indian Red Chilli ENDO 5 - Balanced Flavor",
     description: "Experience the balanced heat and flavor of our Indian Red Chilli ENDO 5. Perfect for adding a medium kick to curries, sauces, and marinades, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
@@ -365,72 +365,13 @@ export const redChilliProducts = [
       "25kg": 4800
     }
   },
-  {
-    id: 6,
-    name: "Fresh Red Chilli",
-    category: "red-chilli",
-    slug: "fresh-red-chilli",
-    image: "/images/chilli/fresh-red-chilli.jpg",
-    alt: "Fresh Red Chilli - Fresh and juicy",
-    title: "Fresh Red Chilli - Fresh Flavor",
-    description: "Our Fresh Red Chilli is perfect for adding a burst of fresh flavor to your dishes. With its vibrant color and juicy texture, it's ideal for immediate culinary use.",
-    features: [
-      "High heat level (30,000-50,000 SHU)",
-      "Fresh and juicy texture",
-      "Perfect for fresh preparations",
-      "Grown using organic methods",
-      "Carefully hand-picked for quality"
-    ],
-    benefits: [
-      "Maximum freshness and vibrant flavor",
-      "Higher vitamin C content than dried chillies",
-      "Juicy texture perfect for fresh preparations",
-      "Vibrant color for garnishing and fresh salsas"
-    ],
-    specifications: [
-      "Length: 5-8 cm",
-      "Moisture: 80-85%",
-      "Color: Vibrant Red",
-      "Heat Level: High"
-    ],
-    specTable: {
-      "Product Name": "Fresh Red Chilli",
-      "Style": "Fresh",
-      "Flavour": "Pungent",
-      "Color": "Vibrant Red",
-      "Pungency in SHU": "30000-50000 (Heat)",
-      "Colour in ASTA": "40-60 max",
-      "Length": "5-8 cm",
-      "Breath": "1.0-1.5cm",
-      "Skin": "Smooth",
-      "Capsaicin content in %": "0.3-0.5 max",
-      "Pods with Stalks": "2% maximum",
-      "Broken Chilies": "2% maximum",
-      "Loose Seeds": "2% maximum",
-      "Damaged & Discolored pods": "1% maximum",
-      "Foreign Material": "1% maximum",
-      "Moisture": "80-85%",
-      "Quality": "A/C Best",
-      "Origin": "Selected growing regions in India",
-      "Packing Details": "5,10 kg Cartoon/Jute/pp"
-    },
-    details: {
-      origin: "Selected growing regions in India",
-      packagingOptions: "5kg, 10kg",
-      shelfLife: "7-10 days when refrigerated",
-      certification: "Organic Certified"
-    },
-    pricing: {
-      "5kg": 500,
-      "10kg": 900
-    }
-  },
+
   {
     id: 7,
     name: "Wrinkled 273 Red Chilli Without Stem",
     category: "red-chilli",
     slug: "wrinkled-273-red-chilli-without-stem",
-    image: "/images/chilli/wrinkled-273-stemless.jpg",
+    image: "https://2.wlimg.com/product_images/bc-small/2022/10/10851230/watermark/wonder-hot-dried-red-chilli-without-stem-1663407184-6527638.jpeg",
     alt: "Wrinkled 273 Red Chilli Without Stem - Unique wrinkled surface",
     title: "Wrinkled 273 Red Chilli Without Stem - Distinctive Flavor",
     description: "Our Wrinkled 273 Red Chilli Without Stem features a unique wrinkled surface and bright red color. Perfect for adding rich flavor and appealing color to various dishes, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",
@@ -486,134 +427,14 @@ export const redChilliProducts = [
       "25kg": 5200
     }
   },
-  {
-    id: 8,
-    name: "Gadag Byadagi Red Chilli",
-    category: "red-chilli",
-    slug: "gadag-byadagi-red-chilli",
-    image: "/images/chilli/gadag-byadagi.jpg",
-    alt: "Gadag Byadagi Red Chilli - Rich color and mild heat",
-    title: "Gadag Byadagi Red Chilli - Rich Colorful Essence",
-    description: "Known for its deep red hue and mild heat, our Gadag Byadagi Red Chilli is ideal for adding rich color and subtle spice to dishes like tandoori, biryani, and sauces. Sourced from sustainable farms for authentic flavor.",
-    features: [
-      "Mild to medium heat (12,000-20,000 SHU)",
-      "Deep red color for vibrant dishes",
-      "Perfect for Indian cuisine",
-      "Grown using organic methods",
-      "Carefully dried to retain natural oils"
-    ],
-    benefits: [
-      "Enhances dish aesthetics with vivid color",
-      "Provides mild heat for balanced flavors",
-      "Supports immune health with antioxidants",
-      "Promotes sustainable agriculture"
-    ],
-    specifications: [
-      "Length: 8-10 cm",
-      "Moisture: 10-12%",
-      "Color: Deep Red",
-      "Heat Level: Mild-Medium"
-    ],
-    specTable: {
-      "Product Name": "Gadag Byadagi Red Chilli",
-      "Style": "Dried",
-      "Flavour": "Mild",
-      "Color": "Deep Red",
-      "Pungency in SHU": "12000-20000 (Heat)",
-      "Colour in ASTA": "80-100 max",
-      "Length": "8-10 cm",
-      "Breath": "1.0-1.5cm",
-      "Skin": "Wrinkled",
-      "Capsaicin content in %": "0.2-0.3 max",
-      "Pods with Stalks": "2% maximum",
-      "Broken Chilies": "2% maximum",
-      "Loose Seeds": "2% maximum",
-      "Damaged & Discolored pods": "1% maximum",
-      "Foreign Material": "1% maximum",
-      "Moisture": "14% maximum",
-      "Quality": "A/C Best",
-      "Origin": "Gadag, Karnataka, India",
-      "Packing Details": "1,5,25 kg Cartoon/Jute/pp"
-    },
-    details: {
-      origin: "Gadag, Karnataka, India",
-      packagingOptions: "1kg, 5kg, 25kg",
-      shelfLife: "12 months",
-      certification: "Organic Certified"
-    },
-    pricing: {
-      "1kg": 220,
-      "5kg": 1000,
-      "25kg": 4500
-    }
-  },
-  {
-    id: 9,
-    name: "Premium Red Chilli Powder",
-    category: "red-chilli",
-    slug: "red-chilli-powder",
-    image: "/images/chilli/chilli-powder.jpg",
-    alt: "Premium Red Chilli Powder - Pure ground spice",
-    title: "Premium Red Chilli Powder - Pure Spicy Essence",
-    description: "Enhance your dishes with our pure Premium Red Chilli Powder, ground from the finest sustainably sourced chillies. Perfect for adding heat and color to curries, soups, and rubs with ease.",
-    features: [
-      "Consistent heat level (20,000-50,000 SHU)",
-      "Fine grind for easy blending",
-      "Versatile for all cooking styles",
-      "Made from organically grown chillies",
-      "Packed to retain freshness"
-    ],
-    benefits: [
-      "Convenient way to add spice",
-      "Boosts flavor profiles instantly",
-      "Supports health with capsaicin benefits",
-      "Sourced sustainably for eco-consciousness"
-    ],
-    specifications: [
-      "Texture: Fine Powder",
-      "Moisture: Below 10%",
-      "Color: Vibrant Red",
-      "Heat Level: Medium-High"
-    ],
-    specTable: {
-      "Product Name": "Premium Red Chilli Powder",
-      "Style": "Powder",
-      "Flavour": "Pungent",
-      "Color": "Vibrant Red",
-      "Pungency in SHU": "20000-50000 (Heat)",
-      "Colour in ASTA": "40-60 max",
-      "Length": "-",
-      "Breath": "-",
-      "Skin": "-",
-      "Capsaicin content in %": "0.3-0.5 max",
-      "Pods with Stalks": "0%",
-      "Broken Chilies": "0%",
-      "Loose Seeds": "0%",
-      "Damaged & Discolored pods": "0%",
-      "Foreign Material": "1% maximum",
-      "Moisture": "10% maximum",
-      "Quality": "A/C Best",
-      "Origin": "Mixed Indian Regions",
-      "Packing Details": "500g, 1kg, 5kg Cartoon/Jute/pp"
-    },
-    details: {
-      origin: "Mixed Indian Regions",
-      packagingOptions: "500g, 1kg, 5kg",
-      shelfLife: "12 months",
-      certification: "Organic Certified"
-    },
-    pricing: {
-      "500g": 130,
-      "1kg": 240,
-      "5kg": 1100
-    }
-  },
+
+
   {
     id: 10,
     name: "Red Chilli Flakes",
     category: "red-chilli",
     slug: "red-chilli-flakes",
-    image: "/images/chilli/chilli-flakes.jpg",
+    image: "https://st4.depositphotos.com/5262935/21946/i/450/depositphotos_219468900-stock-photo-red-chilli-flakes-white-background.jpg",
     alt: "Red Chilli Flakes - Crushed flakes for added texture",
     title: "Red Chilli Flakes - Fiery Texture",
     description: "Add a burst of flavor and texture with our Red Chilli Flakes, crushed from the finest sustainably sourced chillies. Perfect for adding heat and visual appeal to pizzas, pastas, and garnishing.",
@@ -674,7 +495,7 @@ export const redChilliProducts = [
     name: "Red Chilli Seeds",
     category: "red-chilli",
     slug: "red-chilli-seeds",
-    image: "/images/chilli/chilli-seeds.jpg",
+    image: "https://m.media-amazon.com/images/I/51LKepXDSJL.jpg",
     alt: "Red Chilli Seeds - Concentrated source of capsaicin",
     title: "Red Chilli Seeds - Intense Flavor",
     description: "Our Red Chilli Seeds are a concentrated source of capsaicin and heat, perfect for adding intense flavor to your dishes. Sustainably sourced from organic farms for authentic flavor.",
