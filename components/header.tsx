@@ -34,10 +34,27 @@ const Header = () => {
           name: "Red Chilli",
           href: "/products/red-chilli",
           submenu: [
-            { name: "Guntur Chilli", href: "/products/red-chilli" },
-            { name: "Byadgi Chilli", href: "/products/red-chilli" },
-            { name: "Chilli Powder", href: "/products/red-chilli" },
-            { name: "Chilli Seeds", href: "/products/red-chilli" },
+            {
+              name: "Byadgi Chillies",
+              href: "/products/red-chilli?variety=byadgi",
+              submenu: [
+                { name: "BYADGI Dry Red Chilli", href: "/products/red-chilli?variety=byadgi-red-chilli" },
+                { name: "Byadgi Chilli Powder", href: "/products/red-chilli?variety=byadgi-chilli-powder" },
+              ]
+            },
+            {
+              name: "Guntur Chillies",
+              href: "/products/red-chilli?variety=guntur",
+              submenu: [
+                { name: "334/S4/SANNAM/S10 Red Chilli", href: "/products/red-chilli?variety=334-s4-sannam-s10-red-chilli" },
+                { name: "Teja Chilli - S17", href: "/products/red-chilli?variety=teja-s17-red-chilli" },
+                { name: "Wrinkled 273 Red Chilli With Stem", href: "/products/red-chilli?variety=wrinkled-273-red-chilli-with-stem" },
+                { name: "Wrinkled 273 Red Chilli Without Stem", href: "/products/red-chilli?variety=wrinkled-273-red-chilli-without-stem" },
+                { name: "Indian Red Chilli ENDO 5", href: "/products/red-chilli?variety=endo-5-red-chilli" },
+                { name: "Red Chilli Flakes", href: "/products/red-chilli?variety=red-chilli-flakes" },
+                { name: "Red Chilli Seeds", href: "/products/red-chilli?variety=red-chilli-seeds" },
+              ]
+            },
           ]
         },
         { name: "Millets", href: "/products/millets" },
@@ -88,7 +105,7 @@ const Header = () => {
             <div className="flex items-center">
               <div className="relative h-12 w-12 mr-2">
                 <Image
-                  src="/logo.svg"
+                  src="/hyp.jpg"
                   alt="Hearty You Products Logo"
                   width={48}
                   height={48}

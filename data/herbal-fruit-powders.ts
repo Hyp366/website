@@ -4,7 +4,7 @@ export const herbalFruitPowders = [
     name: "Moringa Powder",
     category: "herbal-fruit-powders",
     slug: "moringa-powder",
-    image: "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?q=80&w=800&auto=format&fit=crop",
+    image: "https://fytika.com/cdn/shop/articles/moringa_2.jpg?v=1691998028",
     description: "100% pure Moringa leaf powder rich in nutrients and antioxidants.",
     featured: true,
     details: {
@@ -29,7 +29,7 @@ export const herbalFruitPowders = [
     name: "Neem Powder",
     category: "herbal-fruit-powders",
     slug: "neem-powder",
-    image: "https://images.unsplash.com/photo-1617500603321-aa211febc06a?q=80&w=800&auto=format&fit=crop",
+    image: "https://media.istockphoto.com/id/490879259/photo/medicinal-neem-leaves-with-dried-powder.jpg?s=612x612&w=0&k=20&c=LYC8HRzPhif5gEnsFPnJ8Zdjiot_RBt40t2jAU2pghI=",
     description: "Pure Neem leaf powder known for its medicinal properties.",
     featured: false,
     details: {
@@ -54,7 +54,7 @@ export const herbalFruitPowders = [
     name: "Curry Leaf Powder",
     category: "herbal-fruit-powders",
     slug: "curry-leaf-powder",
-    image: "https://images.unsplash.com/photo-1599749000311-2e7b2e89b827?q=80&w=800&auto=format&fit=crop",
+    image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/curry-leaves-powder-karivepaku-podi.jpg",
     description: "Aromatic curry leaf powder for authentic South Indian flavors.",
     featured: false,
     details: {
@@ -79,7 +79,7 @@ export const herbalFruitPowders = [
     name: "Turmeric Powder",
     category: "herbal-fruit-powders",
     slug: "turmeric-powder-herbal",
-    image: "https://images.unsplash.com/photo-1615485500704-8e990f9671c8?q=80&w=800&auto=format&fit=crop",
+    image: "https://domf5oio6qrcr.cloudfront.net/medialibrary/15065/conversions/fa246ce0-054b-4892-bf30-5eb43cd938aa-thumb.jpg",
     description: "High-curcumin turmeric powder for medicinal and culinary uses.",
     featured: true,
     details: {
@@ -104,7 +104,7 @@ export const herbalFruitPowders = [
     name: "Banana Powder",
     category: "herbal-fruit-powders",
     slug: "banana-powder",
-    image: "https://images.unsplash.com/photo-1566393028639-d108a42c46a7?q=80&w=800&auto=format&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-HI_b1E35B9mW5R8HuiPE97A3uvqNZo5nQ&s",
     description: "Natural, freeze-dried banana powder with no additives.",
     featured: false,
     details: {
@@ -122,6 +122,32 @@ export const herbalFruitPowders = [
       "No additives or preservatives",
       "Versatile ingredient for smoothies and baking",
       "Natural sweetener with no added sugars"
+    ],
+  },
+  {
+    id: 6,
+    name: "Jackfruit Powder",
+    category: "herbal-fruit-powders",
+    slug: "jackfruit-powder",
+    image: "https://www.organicfacts.net/wp-content/uploads/jackfruitpowder.jpg",
+    description: "Natural jackfruit powder made from ripe jackfruits, rich in nutrients and dietary fiber.",
+    featured: false,
+    details: {
+      origin: "Selected regions of South India",
+      type: "Artocarpus heterophyllus",
+      cultivation: "Organic, Pesticide-free",
+      availableForms: ["Powder"],
+      packaging: ["100g", "250g", "500g", "1kg"],
+      shelfLife: "12 months when stored properly",
+      packingDetails: "1kg, 5kg bulk packaging available",
+    },
+    benefits: [
+      "Rich in dietary fiber, supports healthy digestion",
+      "Contains natural antioxidants and vitamins (A, C, B-complex)",
+      "Low glycemic index, suitable for blood sugar management",
+      "Natural source of potassium and magnesium for heart health",
+      "Supports immune system and overall wellness",
+      "Vegan, gluten-free, and free from additives or preservatives"
     ],
   },
 ] 

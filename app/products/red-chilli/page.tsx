@@ -57,25 +57,32 @@ function ProductDetailContent() {
           )
         }
       } else if (varietyParam.startsWith('guntur')) {
-        filtered = filtered.filter(p => 
-          p.name.toLowerCase().includes('guntur') || 
-          p.description.toLowerCase().includes('guntur')
+        filtered = filtered.filter(p =>
+          (
+            (p.details && p.details.origin && p.details.origin.toLowerCase().includes('guntur')) ||
+            p.name.toLowerCase().includes('334') ||
+            p.name.toLowerCase().includes('teja') ||
+            p.name.toLowerCase().includes('wrinkled') ||
+            p.name.toLowerCase().includes('endo') ||
+            p.name.toLowerCase().includes('flakes') ||
+            p.name.toLowerCase().includes('seeds')
+          ) && !p.name.toLowerCase().includes('byadgi')
         )
 
         // Further filter for specific Guntur varieties
         if (varietyParam === 'guntur-teja-s17') {
-          filtered = filtered.filter(p => 
-            p.name.toLowerCase().includes('teja') || 
+          filtered = filtered.filter(p =>
+            p.name.toLowerCase().includes('teja') ||
             p.description.toLowerCase().includes('teja')
           )
         } else if (varietyParam === 'guntur-334-s4') {
-          filtered = filtered.filter(p => 
-            p.name.toLowerCase().includes('334') || 
+          filtered = filtered.filter(p =>
+            p.name.toLowerCase().includes('334') ||
             p.description.toLowerCase().includes('334')
           )
         } else if (varietyParam === 'guntur-sannam-s10') {
-          filtered = filtered.filter(p => 
-            p.name.toLowerCase().includes('sannam') || 
+          filtered = filtered.filter(p =>
+            p.name.toLowerCase().includes('sannam') ||
             p.description.toLowerCase().includes('sannam')
           )
         }
@@ -298,11 +305,6 @@ function ProductDetailContent() {
                         fill
                         className="object-cover"
                       />
-                      {relatedProduct.featured && (
-                        <div className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                          Featured
-                        </div>
-                      )}
                     </div>
                     <div className="p-4">
                       <h3 
@@ -399,12 +401,17 @@ function ProductDetailContent() {
                   className="relative h-64 cursor-pointer" 
                   onClick={() => viewProduct(product.slug)}
                 >
-                  <Image src={product.image || "/placeholder.svg"} alt={product.name} fill className="object-cover" />
-                  {product.featured && (
-                    <div className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                      Featured
-                    </div>
-                  )}
+                  <Image 
+                    src={product.image || "/placeholder.svg"} 
+                    alt={product.name || "Product"} 
+                    fill 
+                    className="object-cover" 
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-red-100 text-red-700 text-xs px-2 py-1 rounded-full">
+                      {product.category.split('-').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                    </span>
+                  </div>
                 </div>
                 <div className="p-6">
                   <h3 

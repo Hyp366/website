@@ -4,7 +4,7 @@ export const milletsProducts = [
     name: "Foxtail Millet (Kangni)",
     category: "millets",
     slug: "foxtail-millet-kangni",
-    image: "https://media.istockphoto.com/id/1178295792/photo/millet-field.jpg?s=612x612&w=0&k=20&c=64czBw46ZrbPu4ViWHNTS-mK290jVN4IVl99PBPNdVs=",
+    image: "https://justorganik.com/wp-content/uploads/2024/04/2.jpg",
     description: "Premium Foxtail Millet (Kangni) featuring small, light yellow grains. Known for its sweet flavor, light texture, and exceptional nutritional profile including high iron content.",
     featured: true,
     details: {
@@ -27,7 +27,7 @@ export const milletsProducts = [
     name: "Pearl Millet (Bajra)",
     category: "millets",
     slug: "pearl-millet-bajra",
-    image: "https://media.istockphoto.com/id/1178295792/photo/millet-field.jpg?s=612x612&w=0&k=20&c=64czBw46ZrbPu4ViWHNTS-mK290jVN4IVl99PBPNdVs=",
+    image: "https://www.greendna.in/cdn/shop/products/perl5.jpg?v=1750257706",
     description: "Premium quality Pearl Millet (Bajra) known for its nutritional value and drought-resistant properties. Features small, pearl-shaped grains with a mild, nutty flavor.",
     featured: false,
     details: {
@@ -50,7 +50,7 @@ export const milletsProducts = [
     name: "Finger Millet (Ragi)",
     category: "millets",
     slug: "finger-millet-ragi",
-    image: "https://media.istockphoto.com/id/1178295792/photo/millet-field.jpg?s=612x612&w=0&k=20&c=64czBw46ZrbPu4ViWHNTS-mK290jVN4IVl99PBPNdVs=",
+    image: "https://vibrantliving.in/cdn/shop/files/FinerMillet.png?v=1731059328",
     description: "Premium Finger Millet (Ragi) with distinctive small, round grains. Known for its exceptional calcium content and earthy flavor profile that enhances traditional recipes.",
     featured: false,
     details: {
@@ -73,7 +73,7 @@ export const milletsProducts = [
     name: "Little Millet (Kutki)",
     category: "millets",
     slug: "little-millet-kutki",
-    image: "https://media.istockphoto.com/id/1178295792/photo/millet-field.jpg?s=612x612&w=0&k=20&c=64czBw46ZrbPu4ViWHNTS-mK290jVN4IVl99PBPNdVs=",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCQGa1CEndks4FdmdavczgT6xo2keViZSUdw&s",
     description: "Premium Little Millet (Kutki) featuring small, round grains similar to quinoa. Known for its subtle flavor, light texture, and impressive nutritional profile with good fat content.",
     featured: false,
     details: {
@@ -96,7 +96,7 @@ export const milletsProducts = [
     name: "Barnyard Millet (Sanwa)",
     category: "millets",
     slug: "barnyard-millet-sanwa",
-    image: "https://media.istockphoto.com/id/1178295792/photo/millet-field.jpg?s=612x612&w=0&k=20&c=64czBw46ZrbPu4ViWHNTS-mK290jVN4IVl99PBPNdVs=",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCduP3g8YF8L_SAorA5w2awVXz-c9p5K3OQQ&s",
     description: "Premium Barnyard Millet (Sanwa) known for its white, rice-like appearance. Features excellent fiber content and a mild flavor that works well in diverse culinary applications.",
     featured: false,
     details: {
@@ -119,7 +119,7 @@ export const milletsProducts = [
     name: "Sorghum (Jowar)",
     category: "millets",
     slug: "sorghum-jowar",
-    image: "https://media.istockphoto.com/id/1178295792/photo/millet-field.jpg?s=612x612&w=0&k=20&c=64czBw46ZrbPu4ViWHNTS-mK290jVN4IVl99PBPNdVs=",
+    image: "https://i0.wp.com/www.smartfood.org/wp-content/uploads/2021/01/sorghums.jpg?fit=700%2C525&ssl=1",
     description: "Premium Sorghum (Jowar) with round, pearly white grains. Known for its mild, sweet taste and versatility in both traditional and modern cuisine.",
     featured: true,
     details: {
