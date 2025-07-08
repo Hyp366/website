@@ -4,7 +4,7 @@ export const indianPulses = [
     name: "Fried Gram Dal",
     category: "indian-pulses",
     slug: "fried-gram-dal",
-    image: "https://images.unsplash.com/photo-1612257999756-11e70535e280?q=80&w=800&auto=format&fit=crop",
+    image: "https://onehealth.store/cdn/shop/files/Fried.png?v=1727533216&width=1445",
     description: "Crunchy and nutritious fried gram dal, perfect for snacking and adding to various dishes.",
     featured: true,
     details: {
@@ -29,7 +29,7 @@ export const indianPulses = [
     name: "Masoor Dal Split",
     category: "indian-pulses",
     slug: "masoor-dal-split",
-    image: "https://images.unsplash.com/photo-1613574559171-22fdc3dce5a5?q=80&w=800&auto=format&fit=crop",
+    image: "https://vibrantliving.in/cdn/shop/files/RedMasoorDalSplitSkinless.jpg?v=1731059680&width=1200",
     description: "Premium quality split red lentils exported from Chennai port. Rich in protein and fiber.",
     featured: true,
     details: {
@@ -55,7 +55,7 @@ export const indianPulses = [
     name: "Brown Chickpea",
     category: "indian-pulses",
     slug: "brown-chickpea",
-    image: "https://images.unsplash.com/photo-1600692980807-c19ccd525f61?q=80&w=800&auto=format&fit=crop",
+    image: "https://t4.ftcdn.net/jpg/02/91/87/41/360_F_291874137_MTDnKyC26KPyOJGYfDTdVM4cUxPs1GeD.jpg",
     description: "Nutritious brown chickpeas with earthy flavor and high nutritional value.",
     featured: false,
     details: {
@@ -80,7 +80,7 @@ export const indianPulses = [
     name: "Chana Dal",
     category: "indian-pulses",
     slug: "chana-dal",
-    image: "https://images.unsplash.com/photo-1612257499637-e18166f7cf15?q=80&w=800&auto=format&fit=crop",
+    image: "https://theplantbasedschool.com/wp-content/uploads/2024/02/Split-chickpeas-on-a-plate-2.jpg",
     description: "Split Bengal gram with mild, nutty flavor and excellent protein profile.",
     featured: false,
     details: {
@@ -105,7 +105,7 @@ export const indianPulses = [
     name: "Green Moong Dal",
     category: "indian-pulses",
     slug: "green-moong-dal",
-    image: "https://images.unsplash.com/photo-1590368746679-a403ad57e691?q=80&w=800&auto=format&fit=crop",
+    image: "https://t4.ftcdn.net/jpg/02/05/60/27/360_F_205602734_W6hl10ISL2wfDlXNOBmuU6lXhGGxG7Wc.jpg",
     description: "Whole green gram with husk intact, packed with nutrients and protein.",
     featured: true,
     details: {
@@ -155,7 +155,7 @@ export const indianPulses = [
     name: "Toor Dal",
     category: "indian-pulses",
     slug: "toor-dal",
-    image: "https://images.unsplash.com/photo-1604858808905-a9e898f0ebfb?q=80&w=800&auto=format&fit=crop",
+    image: "https://img.freepik.com/premium-photo/yellow-peas-bowl-white-background_101881-244.jpg?semt=ais_items_boosted&w=740",
     description: "Split pigeon peas with mild, nutty flavor, perfect for traditional Indian dishes.",
     featured: false,
     details: {
@@ -180,7 +180,7 @@ export const indianPulses = [
     name: "Urad Dal",
     category: "indian-pulses",
     slug: "urad-dal",
-    image: "https://images.unsplash.com/photo-1611575330633-551252daffa1?q=80&w=800&auto=format&fit=crop",
+    image: "https://cdn.shopify.com/s/files/1/0627/8266/8969/files/Urad_Dal_480x480.webp?v=1705988511",
     description: "Split black gram with creamy interior, essential for South Indian cuisine.",
     featured: false,
     details: {
@@ -205,7 +205,7 @@ export const indianPulses = [
     name: "Yellow Moong Dal",
     category: "indian-pulses",
     slug: "yellow-moong-dal",
-    image: "https://images.unsplash.com/photo-1614254631324-cfdd69d364fd?q=80&w=800&auto=format&fit=crop",
+    image: "https://t3.ftcdn.net/jpg/00/80/09/38/360_F_80093835_nYpRxB285GrbU9e9VmxsumH6QZwokbHN.jpg",
     description: "Split and hulled mung beans with mild, sweet flavor and quick cooking time.",
     featured: true,
     details: {
