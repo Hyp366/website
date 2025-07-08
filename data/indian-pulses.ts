@@ -55,7 +55,7 @@ export const indianPulses = [
     name: "Brown Chickpea",
     category: "indian-pulses",
     slug: "brown-chickpea",
-    image: "https://t4.ftcdn.net/jpg/02/91/87/41/360_F_291874137_MTDnKyC26KPyOJGYfDTdVM4cUxPs1GeD.jpg",
+    image: "https://t3.ftcdn.net/jpg/07/22/81/50/360_F_722815070_Ep9QHbu7GiHsCGq6jNVYWBNSFME15oO8.jpg",
     description: "Nutritious brown chickpeas with earthy flavor and high nutritional value.",
     featured: false,
     details: {
@@ -130,7 +130,7 @@ export const indianPulses = [
     name: "Natural White Chickpeas",
     category: "indian-pulses",
     slug: "natural-white-chickpeas",
-    image: "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?q=80&w=800&auto=format&fit=crop",
+    image: "https://thumbs.dreamstime.com/b/white-chick-pea-kabuli-chana-white-chick-pea-kabuli-chana-isolated-white-background-159066458.jpg",
     description: "Premium quality Kabuli chana with smooth texture and nutty flavor.",
     featured: false,
     details: {

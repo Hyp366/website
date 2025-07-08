@@ -257,19 +257,19 @@ function ProductDetailContent() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center">
+      <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1612257499637-e18166f7cf15?q=80&w=1920&auto=format&fit=crop"
-            alt="Indian Pulses"
+            src="https://img.freepik.com/premium-photo/uncooked-indian-pulses-grains-seeds-white-bowls-wooden-surface-selective-focus_466689-25540.jpg?semt=ais_hybrid&w=740"
+            alt="Indian Pulses Banner"
             fill
-            className="object-cover brightness-50"
+            className="object-cover"
             priority
           />
         </div>
-        <div className="container relative z-10 mx-auto px-4 text-white">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Indian Pulses</h1>
-          <p className="text-xl max-w-2xl">Premium quality, sustainably sourced Indian pulses varieties</p>
+        <div className="container relative z-10 mx-auto px-4 text-white flex flex-col items-center justify-center text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">Indian Pulses</h1>
+          <p className="text-xl max-w-2xl drop-shadow">Premium quality, sustainably sourced Indian pulses varieties</p>
         </div>
       </section>
 

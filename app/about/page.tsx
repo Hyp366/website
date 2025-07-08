@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section className="relative h-[50vh] sm:h-[65vh] md:h-[70vh] flex items-center">
         <div className="absolute inset-0 z-0 bg-black/20">
           <Image
-            src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=2070&auto=format&fit=crop"
+            src="https://media.istockphoto.com/id/1473945180/photo/container-ship-transporting-cargo-logistic-to-import-export-goods-internationally-around-the.jpg?s=612x612&w=0&k=20&c=ONfv7EhuAbMEAh9lJXO1bB-v-K3M5UDk9e2RUTzzDU0="
             alt="About Hearty You Products"
             fill
             className="object-cover brightness-75 scale-105 hover:scale-100 transition-transform duration-10000 ease-in-out"

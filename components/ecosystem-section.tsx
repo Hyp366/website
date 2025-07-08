@@ -153,13 +153,13 @@ const EcosystemSection = () => {
             
             <div className="relative h-[400px] rounded-xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
               <Image 
-                src="https://images.unsplash.com/photo-1631206753348-db44968dd633?q=80&w=1000&auto=format&fit=crop" 
-                alt="Integrated Value Chain" 
-                fill 
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                alt="Integrated Value Chain - Global Logistics"
+                fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-red-900/70 to-transparent flex items-end p-6">
-                <p className="text-lg font-semibold text-white">From supplier to customer with transparency and sustainability</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-red-900/80 via-red-700/60 to-transparent flex items-end p-6">
+                <p className="text-lg font-semibold text-white drop-shadow">From supplier to customer with transparency and sustainability</p>
               </div>
             </div>
           </div>

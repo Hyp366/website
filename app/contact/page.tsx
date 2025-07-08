@@ -17,12 +17,13 @@ export default function ContactPage() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
             alt="Contact Hearty You Products"
             fill
-            className="object-cover brightness-50"
+            className="object-cover"
             priority
           />
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
         <div className="container relative z-10 mx-auto px-4 text-white">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
