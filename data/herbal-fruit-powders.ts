@@ -54,7 +54,7 @@ export const herbalFruitPowders = [
     name: "Curry Leaf Powder",
     category: "herbal-fruit-powders",
     slug: "curry-leaf-powder",
-    image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/curry-leaves-powder-karivepaku-podi.jpg",
+    image: "https://www.flavorsofmumbai.com/wp-content/uploads/2012/02/amazing-1-Curry-leaf-Powder.jpg",
     description: "Aromatic curry leaf powder for authentic South Indian flavors.",
     featured: false,
     details: {

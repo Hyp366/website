@@ -79,13 +79,36 @@ function ProductDetailContent() {
                 <h1 className="text-3xl md:text-4xl font-bold mb-4 text-red-600">{selectedProduct.name}</h1>
                 <p className="text-gray-700 text-lg mb-8">{selectedProduct.description}</p>
 
-                <Tabs defaultValue="features" className="mb-8">
+                <Tabs defaultValue="specifications" className="mb-8">
                   <TabsList className="grid grid-cols-4 w-full">
-                    <TabsTrigger value="features">Features</TabsTrigger>
                     <TabsTrigger value="specifications">Specifications</TabsTrigger>
+                    <TabsTrigger value="features">Features</TabsTrigger>
                     <TabsTrigger value="benefits">Benefits</TabsTrigger>
                     <TabsTrigger value="pricing">Pricing & Packages</TabsTrigger>
                   </TabsList>
+                  
+                  <TabsContent value="specifications" className="p-4 bg-gray-50 rounded-md mt-2">
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="w-1/3">Specification</TableHead>
+                          <TableHead>Details</TableHead>
+                        </TableRow>
+                      </TableHeader>
+                      <TableBody>
+                        {selectedProduct.details && Object.entries(selectedProduct.details)
+                          .filter(([key]) => key.toLowerCase() !== "packaging")
+                          .map(([key, value]: [string, unknown]) => (
+                            <TableRow key={key}>
+                              <TableCell className="font-medium">
+                                {key.replace(/([A-Z])/g, ' $1').replace(/^./, (str: string) => str.toUpperCase())}
+                              </TableCell>
+                              <TableCell>{String(value)}</TableCell>
+                            </TableRow>
+                          ))}
+                      </TableBody>
+                    </Table>
+                  </TabsContent>
                   
                   <TabsContent value="features" className="p-4 bg-gray-50 rounded-md mt-2">
                     <ul className="space-y-2">
@@ -112,27 +135,6 @@ function ProductDetailContent() {
                     </ul>
                   </TabsContent>
                   
-                  <TabsContent value="specifications" className="p-4 bg-gray-50 rounded-md mt-2">
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead className="w-1/3">Specification</TableHead>
-                          <TableHead>Details</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {selectedProduct.details && Object.entries(selectedProduct.details).map(([key, value]: [string, unknown]) => (
-                          <TableRow key={key}>
-                            <TableCell className="font-medium">
-                              {key.replace(/([A-Z])/g, ' $1').replace(/^./, (str: string) => str.toUpperCase())}
-                            </TableCell>
-                            <TableCell>{String(value)}</TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </TabsContent>
-                  
                   <TabsContent value="benefits" className="p-4 bg-gray-50 rounded-md mt-2">
                     <ul className="space-y-2">
                       {selectedProduct.benefits && selectedProduct.benefits.map((benefit: string, index: number) => (
@@ -153,17 +155,14 @@ function ProductDetailContent() {
                         </TableRow>
                       </TableHeader>
                       <TableBody>
-                        <TableRow>
-                          <TableCell className="font-medium">FOB Price:</TableCell>
-                          <TableCell>US1979.00 – US1999.00 Per Metric ton</TableCell>
-                        </TableRow>
+                        
                         <TableRow>
                           <TableCell className="font-medium">Min.Order Quantity:</TableCell>
-                          <TableCell>6.5 MT( 20 ft container )</TableCell>
+                          <TableCell>300 kg</TableCell>
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium">Supply Ability:</TableCell>
-                          <TableCell>50 Metric Ton/Metric Tons per Month</TableCell>
+                          <TableCell>500 kg / 1000 kg</TableCell>
                         </TableRow>
                         <TableRow>
                           <TableCell className="font-medium">Port:</TableCell>

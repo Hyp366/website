@@ -146,10 +146,7 @@ function ProductDetailContent() {
                         </TableRow>
                       </TableHeader>
                       <TableBody>
-                        <TableRow>
-                          <TableCell className="font-medium">FOB Price:</TableCell>
-                          <TableCell>US1979.00 – US1999.00 Per Metric ton</TableCell>
-                        </TableRow>
+                        
                         <TableRow>
                           <TableCell className="font-medium">Min.Order Quantity:</TableCell>
                           <TableCell>6.5 MT( 20 ft container )</TableCell>

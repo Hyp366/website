@@ -365,7 +365,6 @@ export const redChilliProducts = [
       "25kg": 4800
     }
   },
-
   {
     id: 7,
     name: "Wrinkled 273 Red Chilli Without Stem",
@@ -427,14 +426,12 @@ export const redChilliProducts = [
       "25kg": 5200
     }
   },
-
-
   {
     id: 10,
     name: "Red Chilli Flakes",
     category: "red-chilli",
     slug: "red-chilli-flakes",
-    image: "https://st4.depositphotos.com/5262935/21946/i/450/depositphotos_219468900-stock-photo-red-chilli-flakes-white-background.jpg",
+    image: "https://media.gettyimages.com/id/1135096220/photo/red-chili-pepper-flakes-shot-from-above.jpg?s=612x612&w=0&k=20&c=digaaiNiF3zciy5WNgJ9wUbMxK1o4yKYd7pK7psRk2M=",
     alt: "Red Chilli Flakes - Crushed flakes for added texture",
     title: "Red Chilli Flakes - Fiery Texture",
     description: "Add a burst of flavor and texture with our Red Chilli Flakes, crushed from the finest sustainably sourced chillies. Perfect for adding heat and visual appeal to pizzas, pastas, and garnishing.",
@@ -495,7 +492,7 @@ export const redChilliProducts = [
     name: "Red Chilli Seeds",
     category: "red-chilli",
     slug: "red-chilli-seeds",
-    image: "https://m.media-amazon.com/images/I/51LKepXDSJL.jpg",
+    image: "https://5.imimg.com/data5/SELLER/Default/2024/6/428884758/SR/HJ/DL/210196858/red-chilli-seeds-500x500.png",
     alt: "Red Chilli Seeds - Concentrated source of capsaicin",
     title: "Red Chilli Seeds - Intense Flavor",
     description: "Our Red Chilli Seeds are a concentrated source of capsaicin and heat, perfect for adding intense flavor to your dishes. Sustainably sourced from organic farms for authentic flavor.",
@@ -549,6 +546,192 @@ export const redChilliProducts = [
       "100g": 120,
       "250g": 280,
       "500g": 500
+    }
+  },
+  {
+    id: 3.2,
+    name: "Byadgi 2043 Syngenta",
+    category: "red-chilli",
+    slug: "byadgi-2043-syngenta",
+    image: "https://via.placeholder.com/400x300?text=Byadgi+2043+Syngenta",
+    alt: "Byadgi 2043 Syngenta - Deep red color, high color value",
+    title: "Byadgi 2043 Syngenta - High Color Value",
+    description: "Byadgi 2043 Syngenta chillies are renowned for their deep red color and high color value, making them ideal for extraction and culinary use. Sourced from select farms in Karnataka for consistent quality.",
+    features: [
+      "Mild to medium heat (15,000-25,000 SHU)",
+      "High color value for extraction",
+      "Preferred for oleoresin production",
+      "Grown using organic methods",
+      "Carefully dried to retain natural oils"
+    ],
+    benefits: [
+      "Ideal for color extraction in food industry",
+      "Enhances dish aesthetics with vivid color",
+      "Provides mild heat for balanced flavors",
+      "Supports immune health with antioxidants",
+      "Promotes sustainable agriculture"
+    ],
+    specifications: [
+      "Length: 8-10 cm",
+      "Moisture: 10-12%",
+      "Color: Deep Red",
+      "Heat Level: Mild-Medium"
+    ],
+    specTable: {
+      "Product Name": "Byadgi 2043 Syngenta",
+      "Style": "Dried",
+      "Flavour": "Mild",
+      "Color": "Deep Red",
+      "Pungency in SHU": "15000-25000 (Heat)",
+      "Colour in ASTA": "100-130 max",
+      "Length": "8-10 cm",
+      "Breath": "1.0-1.5cm",
+      "Skin": "Wrinkled",
+      "Capsaicin content in %": "0.2-0.3 max",
+      "Pods with Stalks": "2% maximum",
+      "Broken Chilies": "2% maximum",
+      "Loose Seeds": "2% maximum",
+      "Damaged & Discolored pods": "1% maximum",
+      "Foreign Material": "1% maximum",
+      "Moisture": "14% maximum",
+      "Quality": "A/C Best",
+      "Origin": "Karnataka, India",
+      "Packing Details": "5,10,15,20,25 & 40 kg Cartoon/Jute/pp"
+    },
+    details: {
+      origin: "Karnataka, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 230,
+      "5kg": 1050,
+      "25kg": 4700
+    }
+  },
+  {
+    id: 3.3,
+    name: "Byadgi Kaddi (KDL)",
+    category: "red-chilli",
+    slug: "byadgi-kaddi-kdl",
+    image: "https://via.placeholder.com/400x300?text=Byadgi+Kaddi+KDL",
+    alt: "Byadgi Kaddi (KDL) - Long, wrinkled, deep red chilli",
+    title: "Byadgi Kaddi (KDL) - Long Wrinkled Variety",
+    description: "Byadgi Kaddi (KDL) is a long, wrinkled, deep red chilli variety, prized for its color and mild pungency. Perfect for traditional Indian recipes and color extraction.",
+    features: [
+      "Mild heat (12,000-20,000 SHU)",
+      "Long, wrinkled pods",
+      "Deep red color",
+      "Preferred for color extraction",
+      "Grown using organic methods"
+    ],
+    benefits: [
+      "Excellent for color extraction",
+      "Enhances visual appeal of dishes",
+      "Mild pungency for subtle flavor",
+      "Supports sustainable agriculture",
+      "Rich in antioxidants"
+    ],
+    specifications: [
+      "Length: 10-12 cm",
+      "Moisture: 10-12%",
+      "Color: Deep Red",
+      "Heat Level: Mild"
+    ],
+    specTable: {
+      "Product Name": "Byadgi Kaddi (KDL)",
+      "Style": "Dried",
+      "Flavour": "Mild",
+      "Color": "Deep Red",
+      "Pungency in SHU": "12000-20000 (Heat)",
+      "Colour in ASTA": "90-120 max",
+      "Length": "10-12 cm",
+      "Breath": "1.0-1.5cm",
+      "Skin": "Wrinkled",
+      "Capsaicin content in %": "0.2-0.3 max",
+      "Pods with Stalks": "2% maximum",
+      "Broken Chilies": "2% maximum",
+      "Loose Seeds": "2% maximum",
+      "Damaged & Discolored pods": "1% maximum",
+      "Foreign Material": "1% maximum",
+      "Moisture": "14% maximum",
+      "Quality": "A/C Best",
+      "Origin": "Karnataka, India",
+      "Packing Details": "5,10,15,20,25 & 40 kg Cartoon/Jute/pp"
+    },
+    details: {
+      origin: "Karnataka, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 225,
+      "5kg": 1020,
+      "25kg": 4600
+    }
+  },
+  {
+    id: 3.4,
+    name: "Byadgi-355",
+    category: "red-chilli",
+    slug: "byadgi-355",
+    image: "https://via.placeholder.com/400x300?text=Byadgi+355",
+    alt: "Byadgi-355 - High color, mild pungency chilli",
+    title: "Byadgi-355 - High Color, Mild Pungency",
+    description: "Byadgi-355 is a high color, mild pungency chilli variety, ideal for color extraction and culinary use. Sourced from select farms in Karnataka for consistent quality.",
+    features: [
+      "Mild heat (10,000-18,000 SHU)",
+      "High color value",
+      "Preferred for color extraction",
+      "Grown using organic methods",
+      "Carefully dried to retain natural oils"
+    ],
+    benefits: [
+      "Excellent for color extraction in food industry",
+      "Enhances dish aesthetics with vivid color",
+      "Mild pungency for subtle flavor",
+      "Supports immune health with antioxidants",
+      "Promotes sustainable agriculture"
+    ],
+    specifications: [
+      "Length: 8-10 cm",
+      "Moisture: 10-12%",
+      "Color: Deep Red",
+      "Heat Level: Mild"
+    ],
+    specTable: {
+      "Product Name": "Byadgi-355",
+      "Style": "Dried",
+      "Flavour": "Mild",
+      "Color": "Deep Red",
+      "Pungency in SHU": "10000-18000 (Heat)",
+      "Colour in ASTA": "110-140 max",
+      "Length": "8-10 cm",
+      "Breath": "1.0-1.5cm",
+      "Skin": "Wrinkled",
+      "Capsaicin content in %": "0.1-0.2 max",
+      "Pods with Stalks": "2% maximum",
+      "Broken Chilies": "2% maximum",
+      "Loose Seeds": "2% maximum",
+      "Damaged & Discolored pods": "1% maximum",
+      "Foreign Material": "1% maximum",
+      "Moisture": "14% maximum",
+      "Quality": "A/C Best",
+      "Origin": "Karnataka, India",
+      "Packing Details": "5,10,15,20,25 & 40 kg Cartoon/Jute/pp"
+    },
+    details: {
+      origin: "Karnataka, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 220,
+      "5kg": 1000,
+      "25kg": 4500
     }
   }
 ]
