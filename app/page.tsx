@@ -49,8 +49,8 @@ export default function Home() {
             </div>
             <div className="relative h-80 md:h-96 order-1 md:order-2 rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1470&auto=format&fit=crop"
-                alt="About Hearty You Products"
+                src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=600&auto=format&fit=crop"
+                alt="Sustainable Practices"
                 fill
                 className="object-cover"
               />

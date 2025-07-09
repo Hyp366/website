@@ -370,7 +370,7 @@ export const redChilliProducts = [
     name: "Wrinkled 273 Red Chilli Without Stem",
     category: "red-chilli",
     slug: "wrinkled-273-red-chilli-without-stem",
-    image: "https://2.wlimg.com/product_images/bc-small/2022/10/10851230/watermark/wonder-hot-dried-red-chilli-without-stem-1663407184-6527638.jpeg",
+    image: "https://5.imimg.com/data5/SELLER/Default/2021/1/SN/II/UE/56661407/355-dry-red-chilli-500x500.jpg",
     alt: "Wrinkled 273 Red Chilli Without Stem - Unique wrinkled surface",
     title: "Wrinkled 273 Red Chilli Without Stem - Distinctive Flavor",
     description: "Our Wrinkled 273 Red Chilli Without Stem features a unique wrinkled surface and bright red color. Perfect for adding rich flavor and appealing color to various dishes, these chillies are sustainably grown and naturally dried to preserve their bold flavor.",

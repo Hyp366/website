@@ -341,8 +341,8 @@ function ProductDetailContent() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1588252303782-cb80119abd6d?q=80&w=1920&auto=format&fit=crop"
-            alt="Dry Red Chilli Products"
+            src="https://www.bstspices.com/assets/images/ps-s334-chilli-with-stem-8-1848x1125.png"
+            alt="334/S4/SANNAM/S10 Red Chilli"
             fill
             className="object-cover brightness-50"
             priority

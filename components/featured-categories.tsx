@@ -42,7 +42,7 @@ const categories = [
     id: 5,
     name: "Indian Pulses",
     description: "Premium quality pulses sourced from the finest farms in India",
-    image: "https://imgs.search.brave.com/3vT96RK6f6hOh6WHm2KAbRLQNCPB3thruIIrD_ed_-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9mcmVz/aC1sZWd1bWVzLXB1/bHNlcy1ibGFuay1z/cGFjZS1lbXB0eS1k/ZXNpZ24tMzI5MTc0/OTM2LmpwZw",
+    image: "https://img.freepik.com/premium-photo/uncooked-indian-pulses-grains-seeds-white-bowls-wooden-surface-selective-focus_466689-25540.jpg?semt=ais_hybrid&w=740",
     mobileImage: "https://imgs.search.brave.com/3vT96RK6f6hOh6WHm2KAbRLQNCPB3thruIIrD_ed_-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9mcmVz/aC1sZWd1bWVzLXB1/bHNlcy1ibGFuay1z/cGFjZS1lbXB0eS1k/ZXNpZ24tMzI5MTc0/OTM2LmpwZw",
     link: "/products/indian-pulses",
   },
