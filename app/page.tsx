@@ -73,8 +73,7 @@ export default function Home() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="text-white border-white hover:bg-white/10 text-lg px-8"
+              className="bg-white text-red-600 border border-white font-bold hover:bg-gray-100 text-lg px-8"
             >
               <Link href="/contact">Get in Touch</Link>
             </Button>
