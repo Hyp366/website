@@ -122,67 +122,6 @@ export const redChilliProducts = [
     }
   },
   {
-    id: 3,
-    name: "BYADGI Dry Red Chilli",
-    category: "red-chilli",
-    slug: "byadgi-red-chilli",
-    image: "https://imgs.search.brave.com/fL-7PsTwTsPWOELIzXVmkEolDUfsfCtF1Skfh4sHMmg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly81Lmlt/aW1nLmNvbS9kYXRh/NS9BTkRST0lEL0Rl/ZmF1bHQvMjAyNC8y/LzM4MjY0NzYwNS9I/VC9FQy9MRS8yNDEx/ODE3OC9wcm9kdWN0/LWpwZWctMTAwMHgx/MDAwLmpwZWc",
-    alt: "BYADGI Dry Red Chilli - Rich color and mild heat",
-    title: "BYADGI Dry Red Chilli - Rich Colorful Essence",
-    description: "Known for its deep red hue and mild heat, our BYADGI Dry Red Chilli is ideal for adding rich color and subtle spice to dishes like tandoori, biryani, and sauces. Sourced from sustainable farms for authentic flavor.",
-    features: [
-      "Mild to medium heat (15,000-25,000 SHU)",
-      "Deep red color for vibrant dishes",
-      "Perfect for Indian cuisine",
-      "Grown using organic methods",
-      "Carefully dried to retain natural oils"
-    ],
-    benefits: [
-      "Enhances dish aesthetics with vivid color",
-      "Provides mild heat for balanced flavors",
-      "Supports immune health with antioxidants",
-      "Promotes sustainable agriculture"
-    ],
-    specifications: [
-      "Length: 8-10 cm",
-      "Moisture: 10-12%",
-      "Color: Deep Red",
-      "Heat Level: Mild-Medium"
-    ],
-    specTable: {
-      "Product Name": "Byadgi Dry Red Chilli",
-      "Style": "Dried",
-      "Flavour": "Mild",
-      "Color": "Deep Red",
-      "Pungency in SHU": "15000-25000 (Heat)",
-      "Colour in ASTA": "80-100 max",
-      "Length": "8-10 cm",
-      "Breath": "1.0-1.5cm",
-      "Skin": "Wrinkled",
-      "Capsaicin content in %": "0.2-0.3 max",
-      "Pods with Stalks": "2% maximum",
-      "Broken Chilies": "2% maximum",
-      "Loose Seeds": "2% maximum",
-      "Damaged & Discolored pods": "1% maximum",
-      "Foreign Material": "1% maximum",
-      "Moisture": "14% maximum",
-      "Quality": "A/C Best",
-      "Origin": "Karnataka, India",
-      "Packing Details": "5,10,15,20,25 & 40 kg Cartoon/Jute/pp"
-    },
-    details: {
-      origin: "Karnataka, India",
-      packagingOptions: "1kg, 5kg, 25kg",
-      shelfLife: "12 months",
-      certification: "Organic Certified"
-    },
-    pricing: {
-      "1kg": 220,
-      "5kg": 1000,
-      "25kg": 4500
-    }
-  },
-  {
     id: 3.1,
     name: "Byadgi Chilli Powder",
     category: "red-chilli",
@@ -728,6 +667,67 @@ export const redChilliProducts = [
       "1kg": 220,
       "5kg": 1000,
       "25kg": 4500
+    }
+  },
+  {
+    id: 12,
+    name: "341 Dry Red Chilli",
+    category: "red-chilli",
+    slug: "341-dry-red-chilli",
+    image: "https://5.imimg.com/data5/SELLER/Default/2021/2/YO/UL/GL/1209646/341-dry-red-chilli-500x500.jpg", // Placeholder image, replace if needed
+    alt: "341 Dry Red Chilli - Guntur variety",
+    title: "341 Dry Red Chilli - Guntur Variety",
+    description: "341 Dry Red Chilli is a popular Guntur variety known for its vibrant red color, moderate heat, and distinctive flavor. Widely used in Indian cuisine for its color and pungency, it is ideal for making chilli powder and adding depth to curries and sauces.",
+    features: [
+      "Moderate heat level",
+      "Bright red color",
+      "Distinctive Guntur flavor",
+      "Ideal for chilli powder production",
+      "Sourced from Guntur, Andhra Pradesh"
+    ],
+    benefits: [
+      "Enhances color and flavor of dishes",
+      "Rich in capsaicin and antioxidants",
+      "Supports metabolism",
+      "Widely used in Indian and Asian cuisines"
+    ],
+    specifications: [
+      "Length: 7-9 cm",
+      "Moisture: 10-12%",
+      "Color: Bright Red",
+      "Heat Level: Moderate"
+    ],
+    specTable: {
+      "Product Name": "341 Dry Red Chilli",
+      "Style": "Dried",
+      "Flavour": "Moderate",
+      "Color": "Bright Red",
+      "Pungency in SHU": "20000-30000 (Heat)",
+      "Colour in ASTA": "40-60 max",
+      "Length": "7-9 cm",
+      "Breath": "1.0-1.5cm",
+      "Skin": "Thin",
+      "Capsaicin content in %": "0.2-0.3 max",
+      "Pods with Stalks": "2% maximum",
+      "Broken Chilies": "2% maximum",
+      "Loose Seeds": "2% maximum",
+      "Damaged & Discolored pods": "1% maximum",
+      "Foreign Material": "1% maximum",
+      "Moisture": "12% maximum",
+      "Quality": "A/C Best",
+      "Origin": "Guntur, Andhra Pradesh, India",
+      "Packing Details": "5,10,15,20,25 & 40 kg Cartoon/Jute/pp"
+    },
+    details: {
+      origin: "Guntur, Andhra Pradesh, India",
+      packagingOptions: "1kg, 5kg, 25kg",
+      shelfLife: "12 months",
+      certification: "Organic Certified"
+    },
+    pricing: {
+      "1kg": 240,
+      "5kg": 1050,
+      "25kg": 4800
     }
   }
 ]
