@@ -21,6 +21,10 @@ const certifications = [
     name: "MSME",
     img: "https://imgs.search.brave.com/UMqsMe8vk177HZs2Wl0JlxrlZ-AB77LCPXujDcd936k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9iYW5u/ZXIyLmNsZWFucG5n/LmNvbS8yMDE4MDUw/MS9zaGUva2lzc3Bu/Zy1taW5pc3RyeS1v/Zi1taWNyby1zbWFs/bC1hbmQtbWVkaXVt/LWVudGVycHJpc2Vz/LWdvLTVhZThjNDdj/ODU2OGUxLjI2ODkw/MDQ4MTUyNTIwNDA5/MjU0NjUuanBn",
   },
+  {
+    name: "IET",
+    img: "/placeholder.svg", // Replace with official IET logo URL if available
+  },
 ]
 
 export default function CertificationsBar() {

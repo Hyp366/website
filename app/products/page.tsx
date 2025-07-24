@@ -18,7 +18,7 @@ export default function ProductsPage() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80" // Hands holding a plant
             alt="Hearty You Products Catalog"
             fill
             className="object-cover brightness-50"
@@ -35,15 +35,9 @@ export default function ProductsPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-8">
-            {/* Filters */}
-            <div className="w-full md:w-1/4">
-              <Suspense fallback={<div className="p-4 border rounded-lg animate-pulse bg-gray-50">Loading filters...</div>}>
-                <ProductFilter />
-              </Suspense>
-            </div>
-
+            {/* Filters removed */}
             {/* Products Grid */}
-            <div className="w-full md:w-3/4">
+            <div className="w-full">
               <Suspense fallback={<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[...Array(6)].map((_, i) => (
                   <div key={i} className="bg-gray-100 rounded-xl h-64 animate-pulse"></div>

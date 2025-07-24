@@ -103,7 +103,7 @@ export const spicesProducts = [
       origin: "Selected regions of India",
       type: "Green Cardamom (Elettaria cardamomum)",
       cultivation: "Organic, Pesticide-free",
-      availableForms: ["Whole Pods", "Seeds"],
+      availableForms: ["Whole Pods", "pods (7-8mm)"],
       packaging: ["25g", "50g", "100g", "250g"],
       shelfLife: "18 months when stored properly",
     },

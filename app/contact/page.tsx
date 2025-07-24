@@ -109,44 +109,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-2 text-center text-red-600">Frequently Asked Questions</h2>
-          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Find answers to commonly asked questions about our products and services
-          </p>
-
-          <div className="max-w-3xl mx-auto space-y-6">
-            {[
-              {
-                question: "What are your minimum order quantities?",
-                answer:
-                  "Our minimum order quantities vary by product. For retail packaging, we typically require a minimum order of 10 units per product. For bulk orders, please contact our sales team for specific details.",
-              },
-              {
-                question: "Do you ship internationally?",
-                answer:
-                  "Yes, we ship our products internationally. Shipping costs and delivery times vary depending on the destination. Please contact us for specific shipping information to your location.",
-              },
-              {
-                question: "How can I become a distributor for Hearty You Products?",
-                answer:
-                  "We're always looking for distribution partners. Please fill out our contact form with details about your business, and our partnership team will get in touch with you to discuss potential collaboration.",
-              },
-              {
-                question: "What types of products do you offer?",
-                answer:
-                  "We offer a wide range of premium quality  Dry Red Chilli, Millets, Spices, Herbal & Fruit Powders, and Indian Pulses. All our products are carefully sourced and processed to maintain their natural properties and nutritional value.",
-              },
-            ].map((faq, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3 text-red-600">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* FAQ section removed */}
     </div>
   )
 }

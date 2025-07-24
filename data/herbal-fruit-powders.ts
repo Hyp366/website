@@ -105,8 +105,20 @@ export const herbalFruitPowders = [
     category: "herbal-fruit-powders",
     slug: "banana-powder",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-HI_b1E35B9mW5R8HuiPE97A3uvqNZo5nQ&s",
-    description: "Natural, freeze-dried banana powder with no additives.",
+    description: "Banana powder is made from processed bananas and is widely used in milk shakes, baby foods, cakes, and biscuits. It is a major source of carbohydrates and calories, and is loaded with vitamins and minerals including vitamin B6, vitamin C, dietary fiber, manganese, and potassium. Banana powder aids metabolic function, provides energy, supports the liver and kidneys, promotes healthy nervous system function, and contributes to overall health and wellness. It is also valued for its beneficial ingredients, which are considered superior to many other fruits.",
     featured: false,
+    specTable: {
+      "Product Type": "FRUIT EXTRACT",
+      "Style": "Powder",
+      "Size": "6 cm",
+      "Grade": "A",
+      "Certification": "Phyto, COO",
+      "Weight": "1 kg",
+      "Place Origin": "India",
+      "Brand Name": "Customer Wish",
+      "Model Number": "BP-007",
+      "Color": "Yellow with White"
+    },
     details: {
       origin: "Selected regions of South India",
       type: "Musa sp.",
