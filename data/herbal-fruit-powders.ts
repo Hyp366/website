@@ -141,7 +141,7 @@ export const herbalFruitPowders = [
     name: "Jackfruit Powder",
     category: "herbal-fruit-powders",
     slug: "jackfruit-powder",
-    image: "https://www.organicfacts.net/wp-content/uploads/jackfruitpowder.jpg",
+    image: "https://imgs.search.brave.com/v2fHfFSSsUQaTfRDkk0YbC35IwX-jrBlmFwz2Lvx64Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hZHVr/a2FsYW9ubGluZS5p/bi9jZG4vc2hvcC9w/cm9kdWN0cy9KYWNr/ZnJ1aXRQb3dkZXIu/anBnP3Y9MTYyNzc2/NjU5MiZ3aWR0aD0x/NDQ1",
     description: "Natural jackfruit powder made from ripe jackfruits, rich in nutrients and dietary fiber.",
     featured: false,
     details: {

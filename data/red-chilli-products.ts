@@ -553,7 +553,7 @@ export const redChilliProducts = [
     name: "Byadgi Kaddi (KDL)",
     category: "red-chilli",
     slug: "byadgi-kaddi-kdl",
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Byadagi_Menasinakaayi.jpg/512px-Byadagi_Menasinakaayi.jpg",
+    image: "https://imgs.search.brave.com/KezxeGqAiOTz75Xh9UZXJX25cjmfo1lwVnwSoUkXzQE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly81Lmlt/aW1nLmNvbS9kYXRh/NS9BTkRST0lEL0Rl/ZmF1bHQvMjAyNS8z/LzQ5NzAzOTU3MC9Y/Ti9LTy9BTy8zMDEw/ODY5OS9wcm9kdWN0/LWpwZWctNTAweDUw/MC5qcGc",
     alt: "Byadgi Kaddi (KDL) - Traditional Byadgi variety",
     title: "Byadgi Kaddi (KDL) - Traditional Byadgi Chilli",
     description: "Byadgi Kaddi (KDL) is a traditional variety of Byadgi chilli, known for its deep red color and wrinkled appearance. Popular in South Indian cuisine.",
@@ -674,7 +674,7 @@ export const redChilliProducts = [
     name: "341 Dry Red Chilli",
     category: "red-chilli",
     slug: "341-dry-red-chilli",
-    image: "https://5.imimg.com/data5/SELLER/Default/2021/2/YO/UL/GL/1209646/341-dry-red-chilli-500x500.jpg", // Placeholder image, replace if needed
+    image: "https://imgs.search.brave.com/td-ML-1IqP9IoozUG3ps5ZFnnA-zecw1xN1HZ_VhHs8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly81Lmlt/aW1nLmNvbS9kYXRh/NS9TRUxMRVIvRGVm/YXVsdC8yMDIxLzEx/L1BOL1FUL1ZELzg5/MTIxNzIvY29yaWFu/ZGVyLXBvd2Rlci1z/cGljZXMtMTAwMHgx/MDAwLnBuZw", // Placeholder image, replace if needed
     alt: "341 Dry Red Chilli - Guntur variety",
     title: "341 Dry Red Chilli - Guntur Variety",
     description: "341 Dry Red Chilli is a popular Guntur variety known for its vibrant red color, moderate heat, and distinctive flavor. Widely used in Indian cuisine for its color and pungency, it is ideal for making chilli powder and adding depth to curries and sauces.",
