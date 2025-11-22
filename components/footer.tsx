@@ -12,16 +12,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center mb-6">
-              <div className="relative h-10 w-10 mr-2">
+            <div className="flex flex-col mb-6">
+              <div className="relative h-16 w-48 mb-2">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="/images/logo/hyplogo.png"
                   alt="Hearty You Products Logo"
                   fill
-                  className="object-contain"
+                  className="object-contain object-left"
+                  priority
                 />
               </div>
-              <span className="font-bold text-xl">Hearty You Products India Pvt Ltd </span>
+              <span className="font-bold text-xl text-white">Hearty You Products India Pvt Ltd</span>
             </div>
             <p className="text-gray-400 mb-6">
               Premium quality Dry Red Chilli, Millets, Spices, and Herbal & Fruit Powders for a healthier you. Sustainably sourced and naturally
