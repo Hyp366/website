@@ -95,7 +95,7 @@ const Header = () => {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled || !isLandingPage ? "bg-white shadow-md py-2" : "bg-transparent py-4"
+        isScrolled || !isLandingPage ? "bg-white shadow-md py-1" : "bg-transparent py-2"
       )}
     >
       <div className="container mx-auto px-4">
@@ -103,12 +103,12 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="relative z-10">
             <div className="flex items-center">
-              <div className="relative h-24 w-auto mr-3 overflow-hidden rounded-lg">
+              <div className="relative h-16 w-auto mr-3 overflow-hidden rounded-lg">
                 <Image
                   src="/images/logo/hyplogo.png"
                   alt="Hearty You Products Logo"
-                  width={240}
-                  height={96}
+                  width={160}
+                  height={64}
                   className="h-full w-auto object-contain mix-blend-multiply bg-transparent"
                   priority
                 />
