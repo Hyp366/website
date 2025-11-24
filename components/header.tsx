@@ -103,13 +103,13 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="relative z-10">
             <div className="flex items-center">
-              <div className="relative h-16 w-auto mr-3">
+              <div className="relative h-24 w-auto mr-3 overflow-hidden rounded-lg">
                 <Image
                   src="/images/logo/hyplogo.png"
                   alt="Hearty You Products Logo"
-                  width={160}
-                  height={64}
-                  className="h-full w-auto object-contain"
+                  width={240}
+                  height={96}
+                  className="h-full w-auto object-contain mix-blend-multiply bg-transparent"
                   priority
                 />
               </div>
